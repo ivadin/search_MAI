@@ -1,0 +1,84 @@
+Portable Game Notation (PGN) — формат файла для сохранения шахматных партий. Он был разработан
+Стивеном Эдвардсом (англ. Steven J. Edwards) в 1994 году, чтобы облегчить обмен партиями (к примеру через интернет) между шахматными программами.
+Формат PGN использует символы из ASCII-кодировки и состоит из двух частей: метаданные и нотация партии. В первой части стоит информация о партии: турнир, тур, имена игроков, результат и т. д. Вторая часть состоит из алгебраической нотации. Комментарии находятся внутри {} скобок.
+Большинство шахматных программ поддерживает этот формат. Обработка файлов может совершаться и с помощью обычной программы для редактирования текста. В одном файле можно сохранять более, чем одну партию.
+
+Seven Tag Roster
+В случае, если партия архивируется на будущее, в ней нужны семь обязательных тегов, именуемые «Seven Tag Roster».
+
+Тег «Event»
+[Event «?»] (Названия турнира, матча)
+
+[Event «FIDE World Championship»]
+[Event «Moscow City Championship»]
+[Event «ACM North American Computer Championship»]
+[Event «Casual Game»]
+
+Тег «Site»
+[Site «?»] (Место проведения) Структура: «Город, Регион Страна»
+Для обозначения страны используется список кодов МОК.
+
+[Site «New York City, NY USA»]
+[Site «St. Petersburg RUS»]
+[Site «Riga LAT»]
+
+Тег «Date»
+[Date «????.??.??»] (Дата)
+
+[Date «1992.08.31»]
+[Date «1993.??.??»]
+[Date «2001.01.01»]
+
+Тег «Round»
+[Round «?»] (Тур)
+
+[Round «1»]
+[Round «3.1»]
+[Round «4.1.2»]
+
+Тег «White»
+[White «?»] (Имя играющего белыми)
+
+[White «Tal, Mikhail N.»]
+[White «van der Wiel, Johan»]
+[White «Acme Pawngrabber v.3.2»]
+[White «Fine, R.»]
+
+Тег «Black»
+[Black «?»] (Имя играющего чёрными)
+
+[Black «Lasker, Emmanuel»]
+[Black «Smyslov, Vasily V.»]
+[Black «Smith, John Q.:Woodpusher 2000»]
+[Black «Morphy»]
+
+Тег «Result»
+[Result «*»] (Результат)
+Все возможные результаты
+
+[Result «0-1»]
+[Result «1-0»]
+[Result «1/2-1/2»]
+[Result «*»]
+
+Пример
+[Event "IBM Kasparov vs. Deep Blue Rematch"]
+[Site "New York, NY USA"]
+[Date "1997.05.11"]
+[Round "6"]
+[White "Deep Blue"]
+[Black "Kasparov, Garry"]
+[Opening "Caro-Kann: 4...Nd7"]
+[ECO "B17"]
+[Result "1-0"]
+ 
+1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Ng5 Ngf6 6.Bd3 e6 7.N1f3 h6
+8.Nxe6 Qe7 9.O-O fxe6 10.Bg6+ Kd8 {Каспаров встряхнул головой} 
+11.Bf4 b5 12.a4 Bb7 13.Re1 Nd5 14.Bg3 Kc8 15.axb5 cxb5 16.Qd3 Bc6 
+17.Bf5 exf5 18.Rxe7 Bxe7 19.c4 1-0
+
+См. также
+Portable Draughts Notation — шашечный формат
+
+Ссылки
+Portable Game Notation Specification and Implementation Guide  (англ.)

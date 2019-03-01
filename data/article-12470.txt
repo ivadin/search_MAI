@@ -1,0 +1,41 @@
+Swedish Chess Computer Association (SSDF) — Шведская шахматная компьютерная ассоциация (швед. Svenska schackdatorföreningen) является организацией, тестирующей компьютерное программное обеспечение, играя шахматными программами против друг друга. Ведёт свой рейтинг-лист. 
+SSDF-лист является одной из немногих статистически значимых мер шахматной силы программ, особенно в сравнении с турнирами, поскольку включает в себя результаты тысяч игр, играемых на стандартных аппаратных средствах при обычном контроле времени. Список сообщает не только об абсолютной оценке, но также о процентах выигрышей и количестве учтенных игр. Рейтинг SSDF является независимым от всех национальных или международных рейтинговых систем, таких как ФИДЕ, поэтому компьютерные оценки могут только использоваться для относительного сравнения между собой.
+Текущая (на март 2010 г.) платформа SSDF основана на Intel Core 2 Quad 6600 + 2.4 GHz и 64-битной операционной системой.
+В июне 2006 года в листе появилась шахматная программа Rybka, впервые превысившая отметку в 2900 пунктов. 
+4 августа 2009 года в рейтинг-листе SSDF на 1 месте находилась программа Deep Rybka 3 x64 2GB Q6600 2,4 GHz с оценкой в 3224 пункта. На 2 месте находилась программа Naum 4 x64 2GB Q6600 2,4 GHz с оценкой 3134 пункта. На 3 месте находилась Zappa Mexico II x64 2GB Q6600 2,4 GHz с оценкой 3073 пункта[1].
+
+Рейтинг-лист ежегодных победителей
+1984: Novag Super Constellation 6502 4 MHz (1631)
+1985: Mephisto Amsterdam  68000 12 MHz (1827)
+1986: Mephisto Amsterdam 68000 12 MHz (1827)
+1987: Mephisto Dallas 68020 14 MHz (1923)
+1988: Mephisto MM 4 Turbo Kit 6502 16 MHz (1993)
+1989: Mephisto Portorose 68020 12 MHz (2027)
+1990: Mephisto Portorose 68030 36 MHz (2138)
+1991: Mephisto Vancouver 68030 36 MHz (2127)
+1992: Chess Machine 30 MHz Schröder 3.0 (2174)
+1993: Mephisto Genius 2.0 486/50-66 MHz (2235)
+1995: MChess Pro 5.0 Pentium 90 MHz (2306)
+1996: REBEL 8.0 Pentium 90 MHz (2337)
+1997: HIARCS 6.0 49MB P200 MMX (2418)
+1998: Fritz 5.0 PB29% 67MB P200 MMX (2460)
+1999: Chess Tiger 12.0 DOS 128MB K6-2 450 MHz (2594)
+2000: Fritz 6.0 128MB K6-2 450 MHz (2607)
+2001: Chess Tiger 14.0 CB 256MB Athlon 1200 (2709)
+2002: Deep Fritz 7.0 256MB Athlon 1200 MHz (2759)
+2003: Shredder 7.04 UCI 256MB Athlon 1200 MHz (2791)
+2004: Shredder 8.0 CB 256MB Athlon 1200 MHz (2800)
+2005: Shredder 9.0 UCI 256MB Athlon 1200 MHz (2808)
+2006: Rybka 1.2 256MB Athlon 1200 MHz (2902)
+2007: Rybka 2.3.1 Arena 256MB Athlon 1200 MHz (2935)
+2008: Deep Rybka 3 2GB Q6600 2.4 GHz (3238)
+
+См. также
+Компьютерные шахматы
+Chess Engines Grand Tournament
+Computer Chess Rating Lists
+
+Ссылки
+Swedish Chess Computer Association
+PLY/SSDF – the story
+SSDF Computer Chess Rating Lists (1996-2000)
