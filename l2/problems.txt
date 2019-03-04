@@ -1,0 +1,36 @@
+1 - римские цифры,
+2 - предлоги - решено частично. дополнительная проверка
+3 - транслит
+4 - производные слова
+5 - пустые слова - решено. проверка при создании Counter
+6 - символы '«': 36, '»': 36 - решено. доп проверка
+7 - слова-сокращения
+8 - тире, скобки - решено.
+9 - перечисления
+{',': 333, 'в': 228, '.': 145, '—': 51, 'спорта': 47, 'на': 45, 'с': 44, '«': 36, '»': 36, ')': 34, '(': 33, 'спорт': 30, 'к': 29, 'игры': 26, 'для': 25, 'по': 21, 'из': 20, 'виды': 18, 'также': 17, ':': 17, 'до': 16, 'века': 16, ';': 15, 'уже': 15, 'игр': 15, 'физической': 13, 'спортивных': 13, 'году': 13, 'от': 12, 'видов': 12, 'года': 12, 'соревнования': 11, 'развитие': 11, 'о': 11, 'олимпийских': 11, 'том': 10, 'во': 10, 'олимпийские': 10, 'спортивные': 10, 'их': 9, 'н.': 9, 'веке': 9,
+Первая версия программы. проблем 9
+
+def tokenize_me(file_text):
+    # words = nltk.word_tokenize(file_text)
+    # functors_pos = {'CONJ', 'ADV-PRO', 'CONJ', 'PART'}  # function words
+    # return Counter([word.lower() for word, pos in nltk.pos_tag(words, lang='rus')
+    #     if pos not in functors_pos])
+
+Вторая версия. проблем - 5
+
+def tokenize_me(file_text):
+    tokens = nltk.word_tokenize(file_text)
+
+    tokens = [i.lower() for i in tokens if ( i not in string.punctuation )]
+
+    stop_words = stopwords.words('russian')
+    ext_stop_words = ['что', 'это', 'так', 'вот', 'быть', 'как', 'в', '—', 'к', 'на',
+    'для', 'из', 'также', 'уже', 'еще', 'во', 'эти', 'того']
+    stop_words.extend(ext_stop_words)
+    tokens = Counter(
+        [i.replace("«", "").replace("»", "")
+        for i in tokens if (i not in stop_words and len(i.replace("«", "").replace("»", "")))]
+    )
+    return tokens
+
+Время работы 0:00:56.572540
