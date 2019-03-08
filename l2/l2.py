@@ -24,13 +24,10 @@ def tokenize_me(file_text):
     tokens = [i.lower() for i in tokens if ( i not in string.punctuation )]
 
     stop_words = stopwords.words('russian')
-    ext_stop_words = ['что', 'это', 'так', 'вот', 'быть', 'как', 'в', '—', 'к', 'на',
-    'для', 'из', 'также', 'уже', 'еще', 'во', 'эти', 'того']
+    ext_stop_words = ['—']
     stop_words.extend(ext_stop_words)
-    tokens = Counter(
-        [i.replace("«", "").replace("»", "")
-        for i in tokens if (i not in stop_words and len(i.replace("«", "").replace("»", "")))]
-    )
+    tokens = Counter([i.replace("«", "").replace("»", "")
+        for i in tokens if (i not in stop_words and len(i.replace("«", "").replace("»", "")))])
     return tokens
 
 
@@ -40,10 +37,9 @@ if __name__ == "__main__":
     t = datetime.now()
     for article in articles:
         article_num = article[27:]
-        print(article)
+        article_num = "1.txt"
         with open('../data/article-' + article_num, 'r') as source:
             text = source.read()
-            tokens = tokenize_me(text)
             with open("../data-tokens/token-" + article_num, 'w') as fp:
                 json.dump(tokens, fp, sort_keys=True,
                         ensure_ascii=False, indent=4, separators=(',', ': '))
