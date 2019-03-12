@@ -1,0 +1,77 @@
+Контратака Тракслера — дебют, начинающийся ходами:  1. e2-e4 e7-e5  2. Kg1-f3 Kb8-c6  3. Cf1-c4 Kg8-f6  4. Кf3-g5 Сf8-c5.
+Относится к открытым началам.
+Вариант защиты двух коней. Назван по имени чешского шахматиста и шахматного композитора Карела Тракслера (1866—1936).
+Не обращая внимания на угрозу пункту f7, чёрные сами готовят атаку на белого короля.
+
+Варианты
+5. Кg5:f7
+5. Кg5:f7
+
+5. … Сc5:f2+
+6. Крe1:f2 Кf6:e4+
+7. Крf2-e3?
+7. … Фd8-h4
+8. Фd1-f3
+8. g2-g3
+7. … Фd8-e7 (! Л. Меновски, 1935; ?)
+7. Крf2-g1
+7. … Фd8-e7 8. Кf7:h8 Фe7-c5+ 9. d2-d4 Фc5:c4 10. Кb1-a3! (с преимуществом белых)
+7. … Фd8-h4
+8. Фd1-f1? Лh8-f8
+8. Фd1-f3?
+8. … Лh8-f8
+8. … Кc6-d4
+8. g2-g3
+8. … Фh4-f6? 9. Фd1-e1
+8. … Кe4:g3
+9. Фd1-e1? Фh4:c4
+9. h2:g3 Фh4:g3+ 10. Крg1-f1 Лh8-f8
+9. Кf7:h8
+9. … Кc6-d4
+9. … Кf2:h1
+9. … Кg3-e4
+9. … d7-d5
+10. Сc4:d5
+10. Фd1-e1
+10. Фd1-f3
+9. d2-d4
+9. … Кg3-e4
+9. … Кg3:h1
+10. Сc1-g5
+10. Кf7:h8
+6. Крe1-f1 Фd8-e7 7. Кf7:h8 d7-d5
+8. Фd1-f3 Сf2-h4
+8. Сc4:d5? Сc8-g4
+8. d2-d3 d5:c4
+8. e4:d5
+8. … Сc8-g4
+8. … Кc6-d4
+9. Крf1:f2 Сc8-g4
+9. Кb1-c3 Сc8-g4
+9. Сc4-e2 Фd8-f8
+9. d2-d3 Сc8-g4
+9. c2-c3 Сc8-g4
+9. h2-h3
+9. d5-d6
+
+5. Сc4:f7+
+5. Сc4:f7+
+5. … Крe8-f8
+5. … Крe8-e7
+
+5. d2-d4
+Примечания
+Литература
+«The Two Knights Defence», Jan Pinsky, 2004 (англ.)
+«Traxler Gegenangriff» Jakow Estrin, Walter Rau Verlag, Düsseldorf (нем.)
+
+Ссылки
+Защита двух коней на шахматном портале www.peshka.me
+Партия Рейниш — Тракслер (Java-Applet)
+Seven Ways to Refute the Traxler (PDF)
+«Another Look at the Traxler Gambit», Maarten de Zeeuw (PDF)
+«Another Look at the Traxler Gambit» (2), Maarten de Zeeuw (PDF)
+«Another Look at the Traxler Gambit» (3), Maarten de Zeeuw (PDF)
+«Another Look at the Traxler Gambit» (4), Maarten de Zeeuw (PDF)
+«Another Look at the Traxler Gambit» (5), Maarten de Zeeuw (PDF)
+Traxler analysis, John L. Jerz

@@ -1,0 +1,10 @@
+Велосипед с гидравлическим приводом — класс велосипедов, в которых передача крутящего момента от кареточного узла к колесу происходит через гидравлическую систему, вместо цепи.
+Гидравлическая система состоит из насоса, турбины (гидромашины) и трубопроводов. В качестве насоса также могут выступать гидромашины разнообразных конструкций, например пластинчатая гидромашина.
+
+Ссылки
+Oil shuft на YouTube
+The Cyclo Pump Project: new Hydraulic Variable Transmission System specially designed for bicycles and human pedalling)  (фр.)
+Cannondale Jacknife (Hydraulic Concept Bike)  (англ.)
+Engineering Students Compete To Redesign The Bicycle: hydraulic and pneumatic designs  (англ.)
+First Annual Chainless Challenge: Fluid-Powered Bicycles  (англ.)
+The Contortionist by Dominic Hargreaves  (англ.)
