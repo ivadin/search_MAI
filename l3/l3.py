@@ -67,9 +67,7 @@ def get_articles_from_wiki(query):
     return article
 
 
-if __name__ == '__main__':
-    logger.info('Start')
-
+def read_query_and_get_raw_search_res():
     logger.info('Reading queries')
     with open(queries, 'r') as my_file:
         raw_query = my_file.read()
@@ -85,3 +83,10 @@ if __name__ == '__main__':
     t1 = datetime.now()
     dump_not_marked_data(query_list=query_list, search_sys="wiki")
     logger.info('Searching result got and dumped by %s' % (datetime.now() - t1))
+
+
+if __name__ == '__main__':
+    logger.info('Start')
+
+    logger.info("Success")
+
