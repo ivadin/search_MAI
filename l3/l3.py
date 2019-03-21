@@ -68,6 +68,11 @@ def get_articles_from_wiki(query):
 
 
 def read_query_and_get_raw_search_res():
+    """
+    получение 2х json-ов c 10-ю результатами на каждый запрос. оценки marks
+    ставить вручную
+    :return:
+    """
     logger.info('Reading queries')
     with open(queries, 'r') as my_file:
         raw_query = my_file.read()
