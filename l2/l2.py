@@ -1,6 +1,5 @@
 import nltk
 import string
-from nltk.corpus import stopwords
 from collections import Counter
 from os import walk
 import json
@@ -31,11 +30,13 @@ def tokenize_me(file_text):
     tokens = Counter((i.lower() for i in tokens if (i not in PUNCTUATION and len(i))))
     return tokens
 
+
 def tokenize_me_1(file_text):
     # для 1000  0:00:00.770187
     # для 15000 0:00:10.593748
     words = WORD.findall(file_text)
     return Counter((word.lower() for word in words if len(word)))
+
 
 def tokenize_me_2(file_text):
     # для 1000  0:00:02.934344
@@ -47,6 +48,7 @@ def tokenize_me_2(file_text):
 
 # Копирование 1000  элементов - 0:00:00.08
 # Копирование 15000 элементов - 0:00:01.14
+
 
 if __name__ == "__main__":
     articles = get_articles_name()
@@ -62,6 +64,6 @@ if __name__ == "__main__":
             tokens = tokenize_me_1(text)
             # tokens = tokenize_me_2(text)
             with open("../data-tokens-tmp/token-" + article_num, 'w') as fp:
-                json.dump(tokens, fp, sort_keys=True,
-                        ensure_ascii=False, indent=4, separators=(',', ': '))
-    print(datetime.now()-t)
+                json.dump(tokens, fp, sort_keys=False,
+                          ensure_ascii=False, indent=4, separators=(',', ': '))
+    print(datetime.now() - t)
