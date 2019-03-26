@@ -35,7 +35,8 @@ def tokenize_me_1(file_text):
     # для 1000  0:00:00.770187
     # для 15000 0:00:10.593748
     words = WORD.findall(file_text)
-    return Counter((word.lower() for word in words if len(word)))
+    # return Counter((word.lower() for word in words if len(word)))
+    return [word.lower() for word in words if len(word)]
 
 
 def tokenize_me_2(file_text):
