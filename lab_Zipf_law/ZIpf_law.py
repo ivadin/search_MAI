@@ -37,6 +37,7 @@ if __name__ == "__main__":
         x_point_count += 1
 
     fig = plt.figure()
+    plt.plot([x_point[0], x_point[len(x_point) - 1]], [y_point[0], y_point[len(y_point) - 1]])
     plt.plot(x_point, y_point)
     plt.grid(True)
     plt.title(u'Закон Ципфа')
