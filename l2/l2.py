@@ -13,12 +13,12 @@ WORD = re.compile(r'\w+')
 
 
 def get_articles_name():
-    mypath = '../data/'
+    mypath = '../data_url/'
     f = []
     for (dirpath, dirnames, filenames) in walk(mypath):
         f.extend(filenames)
         break
-    files_name = ["~/stud/search/data/" + x for x in f]
+    files_name = f
 
     return files_name
 
@@ -56,15 +56,10 @@ if __name__ == "__main__":
 
     t = datetime.now()
     for article in articles:
-        article_num = article[27:]
-        with open('../data/article-' + article_num, 'r') as source:
+        with open('../data_url/' + article, 'r') as source:
             text = source.read()
-            # with open("../data-tokens-tmp/token-" + article_num, 'w') as fp:
-            #     fp.write(text)
-            # tokens = tokenize_me(text)
             tokens = tokenize_me_1(text)
-            # tokens = tokenize_me_2(text)
-            with open("../data-tokens-tmp/token-" + article_num, 'w') as fp:
+            with open("../data_url_tokens/" + article, 'w') as fp:
                 json.dump(tokens, fp, sort_keys=False,
                           ensure_ascii=False, indent=4, separators=(',', ': '))
     print(datetime.now() - t)

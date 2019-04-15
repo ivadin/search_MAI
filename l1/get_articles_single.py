@@ -2,17 +2,20 @@ import logging
 import wikipediaapi
 
 from datetime import datetime
+from urllib.parse import urlparse, unquote
+import os
 
 logging.basicConfig(filename="sample.log", level=logging.INFO, filemode='w')
 
-def getArticlesList(categorymembers, level=0, max_level=2):
-	articlesList = []
-	for c in categorymembers.values():
-		if c.ns == wikipediaapi.Namespace.CATEGORY and level < max_level:
-			articlesList += getArticlesList(c.categorymembers, level=level + 1, max_level=max_level)
-		if c.ns == wikipediaapi.Namespace.MAIN:
-			articlesList.append(c.title)
-	return articlesList
+
+def get_articles_list(category_members, level=0, max_level=2):
+    articles_list = []
+    for c in category_members.values():
+        if c.ns == wikipediaapi.Namespace.CATEGORY and level < max_level:
+            articles_list += get_articles_list(c.categorymembers, level=level + 1, max_level=max_level)
+        if c.ns == wikipediaapi.Namespace.MAIN:
+            articles_list.append(c.title)
+    return articles_list
 
 
 if __name__ == "__main__":
@@ -25,7 +28,7 @@ if __name__ == "__main__":
     logging.info("Downloading articles...")
     t1 = datetime.now()
 
-    articles = getArticlesList(cat.categorymembers)
+    articles = get_articles_list(cat.categorymembers)
 
     article_counter = 0
 
@@ -34,12 +37,12 @@ if __name__ == "__main__":
         article_counter += 1
         try:
             page = wiki_wiki.page(name)
-            f = open("data/article-" + str(article_counter) + '.txt', "w+", encoding='utf8')
-            text = page.text
-            f.write(text)
-            f.close()
+            filename = os.path.basename(urlparse(unquote(page.fullurl)).path)
+            with open("../data_url/" + filename + '.txt', "w+", encoding='utf8') as f:
+                text = page.text
+                f.write(text)
         except Exception as exc:
             logging.info(exc)
             continue
 
-    logging.info("Timet spending:" % str(datetime.now() - t1))
+    logging.info("Timet spending: %s" % str(datetime.now() - t1))
