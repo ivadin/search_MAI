@@ -44,6 +44,34 @@ def save_obj(obj, name):
         pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
 
 
+def read_doc_id_and_length(file_descriptor):
+    values = file_descriptor.read(2 * SIZE_OF_LL)
+    return struct.unpack("2" + FORMAT_TO_LL, values)
+
+
+def move_in_index(file_descriptor):
+    doc_id, length = read_doc_id_and_length(file_descriptor)
+    file_descriptor.seek(length * SIZE_OF_CHAR, 1)
+
+
+def read_index_title_and_url(id, file_name):
+    with open(file_name, 'rb') as f:
+        for i in range(id):
+            move_in_index(f)
+        doc_id, length = read_doc_id_and_length(file_descriptor=f)
+        if doc_id != id:
+            print("Внимание! Искомый индекс не соответсвует считаному! %s != %s" % (doc_id, id))
+        bin_title = f.read(length * SIZE_OF_CHAR)
+        frm = str(length) + FORMAT_TO_CHAR
+        title = struct.unpack(frm, bin_title)[0].decode('utf-8')
+        return title, URL_PREFFIX + title
+
+
+def get_articles(set_of_ids, file_name='doc_id'):
+    for id in set_of_ids:
+        print("Заголовок: %s. Url: %s" % read_index_title_and_url(id, file_name))
+
+
 def write_n_digits_to_binary_doc_id(list_of_digits, file_name):
     with open(file_name, 'ab') as f:
         n = len(list_of_digits)
@@ -75,10 +103,11 @@ def create_doc_id_files():
     with open('doc_id', 'ab') as f:
         for title, id in doc_id.items():
             # frm = id + len(title) + len(title) sizeof(char)
+            title = title.encode('utf-8')
             offset = len(title)
             expect_size += SIZE_OF_LL + SIZE_OF_LL + offset * SIZE_OF_CHAR
             frm = FORMAT_TO_LL + FORMAT_TO_LL + str(offset) + FORMAT_TO_CHAR
-            f.write(struct.pack(frm, id, offset, title.encode('utf-8')))
+            f.write(struct.pack(frm, id, offset, title))
     print("expected_size: %s" % expect_size)
     return doc_id
 
@@ -117,6 +146,7 @@ def create_raw_invert_index(doc_id):
     return invert_index
 
 
-DOC_ID = create_doc_id_files()
-INVERT_INDEX = create_raw_invert_index(DOC_ID)
-save_obj(INVERT_INDEX, name='INVERT_INDEX')
+if __name__ == '__main__':
+    DOC_ID = create_doc_id_files()
+    INVERT_INDEX = create_raw_invert_index(DOC_ID)
+    save_obj(INVERT_INDEX, name='INVERT_INDEX')
