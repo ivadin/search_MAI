@@ -1,0 +1,725 @@
+В данном списке описаны дебюты в игре в русские шашки. Дебют может быть включён в данный список, если имеются авторитетные источники, подтверждающие его название и существование.
+
+«Атака шашки g5» (синонимы: Игра А.Сидлина — А.Семёнова, Игра Сидлина — Семёнова (далее орфографические варианты не выделяются отдельно), редко: Защита Сидлина — Семёнова) 1.cd4 fg5 2.gh4
+«Вилочка» 1. cd4 de5. 2. gf4
+«Гибельное начало» 1. cd4 fe5 2. d:f6 g:e5 3. ab4!
+«Городская партия» 1.cd4 dc5 2.bc3 (или 2.dc3) 2…fg5 3.cb4. Теорией ранее выделено следующие самостоятельные варианты-дебюты: Городская партия c 3…gf6: 1.cd4 dc5 2.bc3 fg5 3.cb4 gf6 4.b4:d6 e7:c5, Городская партия c 3…ba5: 1.cd4 dc5 2.bc3 fg5 3.cb4 ba5, Городская партия c 2.dc3: 1.cd4 dc5 2.dc3 fg5 3.cb4 gh4 4.bd6 cc3 5.bd4 ba5, Городская партия c 3.gf4: 1.cd4 dc5 2.bc3 fg5 3.gf4
+«Двойная игра Бодянского» 1.ab4 hg5 2. gh4 gf4 3. d:g5. bc5.
+«Двойной кол» 1.cd4 ba5 2. dc5 d:b4 3. a:c5 fg5 4. bс3 gf6 5. gh4 gf4 6. e:g5 h:f4. Возможна перестановка ходов 1.cb4 ba5 2.bc5 d:b4 3.a:c5
+«Жертва Кукуева» (синоним: Гамбит Кукуева) 1.cd4 (или 1.cb4) 1…fg5 2.dc5 db4 3.ac5 bd4 4.ec5 gf4 5.ge5 cb6
+«Жертва Мазурка» 1.cd4 dc5 2.gf4 cd6 3.de5 и f:e5.
+«Жертва Шошина — Харьянова» (синоним: Гамбит Шошина — Харьянова) 1.gh4 fe5 2.ed4 ef6 3.de3 hg5. 4.ed2 ba5. 5.fg3
+«Защита Святого — Коршунова»
+«Защита Сокова»
+«Защита Чайковского»
+«Игра Блиндера» 1.cb4 fg5 2. 2.dc3
+«Игра Боброва» 1.ef4 fg5 2. de3
+«Игра Бодянского» 1.ab4 ba5 2.ba3.
+«Игра Вертмана»
+«Игра Дьячкова» (синоним: Защита Дьячкова) 1.cd4 fg5 2.bc3 gf6 3.cb4 b:c5 4.d:b6
+«Игра Каулена» 1.gf4 fe5 2. hg3
+«Игра Когана» 1.cd4 fg5 2.bc3 gh4 3.cb4 de5 4.d:f6 g:e5
+«Игра Матасова — Петрова» 1. ef4 fg5 2.fe5 d:f4 3.g:e5.
+«Игра Медкова» 1.cd4 fg5 2.bc3 gf6 3.ab2 dc5 4.gh4.
+«Игра Петрова» 1.gh4 ba5.
+«Игра Рамма — Цукерника» 1.cd4 fg5 2.gf4 gf6 3.bс3 gh4 4.fg5
+«Игра Романычева» l.cd4 fe5
+«Игра Филиппова» 1.ed4.
+«Игра Филиппова — Блиндера» 1.cb4 fg5 2. ed4 dc5 3. b:d6 e:e3 4. f:d4
+«Игра Шмульяна» 1.ef4 fg5 2.cb4
+«Киевская защита» 1.cd4 fg5 2.bc3 gh4 3.cb4 hg5.
+«Киевский кол» (синоним: «Новокиевская защита» 1.cd4 fg5 2.bc3 gh4 3.cb4 hg5 4.bc5 d:b4 5.a:c5 cd6.)
+«Классический косяк»
+«Кол»: 1. cd4 ba5 2.dc5
+«Кол — угловик»
+«Косяк»
+«Косяк Перельмана» 1.cb4 fg5 2.gf4 gf6 3.bc3 bc5 4.ba5 gh4 5.cb4 fg5
+«Косяк Саргина» 1.cb4 bc5 2.bc3 fg5 3.cd4 gf6 4.db6 ac5
+«Косяк Селезнёва» (синоним: «Косяк Хромого») 1.cb4 fg5 2.gf4 gf6 3.bc3 bc5 4.ba5 сb4 5.ac5 db4
+«Косяк с разменом на g5» 1.cb4 fg5 2.gf4 gf6 3.bc3 gh4 4.fg5 hf4 5.hf4
+«Ленинградская защита» 1.cd4 fg5 2.bc3 gf6 3.cb4 bа5 4.dc5
+«Начало Ивашко» 1.cd4 fg5 2.dc3 (с перестановкой ходов: 1.ed4 fg5 2.de3)
+«Начало Купермана»
+«Новое начало» (синоним: «Защита Купермана») 1.cd4 bc5 2.d:b6 a:c5
+«Новоленинградская защита» 1.cd4 fg5 2.bc3 gh4 3.сb4 gf6 4.dc5
+«Обратная вилочка» 1.gf4 fe5 2.cd4
+«Обратная городская партия»
+«Обратная игра Боброва»
+«Обратная игра Бодянского»
+«Обратная игра Дьячкова»
+«Обратная старая партия»
+«Обратный кол» 1.cb4 fe5 2.gh4 ef4 3.e: g5 h: f4
+«Обратный кол — угловик»
+«Обратный косяк» 1.cb4 fg5 2.gf4 gf6 3.bc3 fe5 4.ab2, или 4.ba5
+«Обратный отыгрыш»
+«Обратный перекрёсток» 1.cd4 de5 2.bc3 ed6 3.gh4
+«Обратный тычок» 1.cb4 fg5 2.bc3 gf4
+«Отказанная городская партия»
+«Отказанная игра Блиндера»
+«Отказанная игра Бодянского» 1.ab4 c ответом черных 1…fe5, или 1…hg5, или 1…bc5.
+«Отказанная игра Каулена» 1.gf4 c ответом 1…dс5 или 1…ba5.
+«Отказанная игра Петрова» 1.gh4 с ответом 1…fe5, или 1…fg5, или 1…bc5.
+«Отказанная игра Филиппова» 1.ed4 с ответом 1…bc5, или 1…fe5, или 1…fg5.
+«Отказанная обратная городская партия» 1.cb4 fe5 2.ef4 ba5
+«Отказанная обратная игра Бодянского» 1.cd4 hg5 2.bc3, или 2.gf4, или 2.bc3, или 2.gf4
+«Отказанный кол»
+«Отказанный косяк»
+«Отказанный косяк Блиндера»
+«Отказанный косяк Саргина»
+«Отказанный косяк Сокова»
+«Отказанный обратный кол»
+«Отказанный обратный перекрёсток»
+«Отказанный отыгрыш» 1.cd4 dc5 2.bc3 cd6 3.cb4 fe5 4.d:f6 g:e5
+«Отказанный отыгрыш Иванова» 1.cd4 dc5 2.bc3 cd6 3.cb4 fe5 4.d:f6 g:e55.ba5 hg7 6.a:c7 d:b6
+«Отказанный перекрёсток»
+«Отказанный центральный тычок»
+«Отыгрыш» 1.cd4 dc5 2.bc3 cd6 3.cb4 ba5 4.d:b6 a:c7. Отыгрыш с 2.dc3: 1.cd4 dc5 2.dc3.Отыгрыш с 3.ab2: 1.cd4 dc5 2.bc3 cd6 3.ab2. Отыгрыш с 3.gf4: 1.cd4 dc5 2.bc3 cd6 3.gf4. Отыгрыш Сокова с 2.gh4: 1.cd4 dc5 2.gh4
+
+«Перекрёсток»
+«Слепая партия» Слепая партия c 1…fe5: 1.cb4 fe5 2.ef4 ef6 3.ba5 fg5 4.fe3 gh4 5.gf2. Слепая партия c 1…de5: 1.cb4 de5 2.ba5 bc5 3.ef4 ed6 4.bc3 fg5 5.fe3 gh4 6.gf2
+«Старая партия»
+«Тычок» 1.cb4 fg5 2. bс5
+«Харьковское начало»
+«Центральная партия» 1. cd4 fg5 2.gf4 gf6 3.bс3 hg7
+«Центральный тычок»
+«Челябинский косяк» (синоним: «Косяк В.Белоусова — В.Колодяжного»)
+
+Литература
+1. Лисенко В. К. Первая книга шашиста. Курс дебютов и принципы позиций: Руководство для начинающих. — Л.: Наука и школа, 1926. — 196 с, ил., 1 л. портр. — 5000 экз.
+2. Руссо В. Н., Пель А. Н. Шашечный дебют «Перекресток». — М.; Л.: Госиздат, 1930. — 62 с. — 4000 экз.
+3. Потапов Л. С., Рамм Л. М. Курс дебютов: Руководство к изучению шашечн. игры. — М.: ФиС, 1938. — 167 с. — 5000 экз.
+4. Куперман И. И. Новая теория шашечных дебютов. — М.; Л.: ФиС, 1949. — 64 с. — 10000 экз.
+5. Куперман И. И. Начала партий в шашки / Предисл. Л. А. Рубинштейна. — М.: ФиС, 1950. — 163 с. — 20000 экз.
+6. Рамм Л. М. Курс шашечных начал: Руководство к изучению игры. — М.: ФиС, 1953. — 348 с. — 15000 экз.
+7. Куперман И. И., Каплан В. М. Начала и середина игры в шашки / Предисл. И. Качерова. — М.: ФиС, 1957. — 366 с. — 20000 экз.
+8. Абаулин В. И. Начала в шашечной партии. — М.: ФиС, 1965. — 72 с (Библиотечканачинающего шашиста). — 47000 экз.
+9. Абаулин В. И. Начала в шашечной партии. — Кишинев: Картя Молдовеняскэ, 1982. — 80 с. — На молд. яз. — 5000 экз. Пер. с рус. изд. 1965 г.
+10. Адамович В. К. Шашки: Индивидуальный дебютный репертуар. — Рига: Авотс, 1982. — 109 с. — На латыш. яз. — 8000 экз.
+11. Головня И. А. Дебютные ловушки и комбинации в русских шашках. — Киев: Здоровье, 1983. — 80 с. — На украинском яз. — 55 000 экз.
+12. Литвинович В. С., Негра Н. Н. Курс шашечных дебютов. — Минск: Полымя, 1985. — 255 с. — 33000 экз.
+13. Цукерник Э. Г. Русские шашки. Теория дебютов. — Рига: ILJUS, 1996. — 238 с. — тираж не указан.
+14. Svanders J. Apgriezta pilsetas atklatre (Обратная городская партия) Metodiskais materialas. — Latvias PSR Ministru padomes fisikas kulturas un sporta komiteja/ Zinatsniski — metodiska padome. — Riga, 1970. — 49 с. — 2000 экз.
+15. Вигман В. и Швандерс Ю. «Косяк» и «Отказанный косяк». Методическое пособие. Часть I. — Комитет по физической культуре и спорту при Совете Министров Латвийской ССР. Научно — методический совет. — Рига, 1971(1972). — 44 с. — 1100 экз.
+16. Вигман В. и Швандерс Ю. «Косяк» и «Отказанный косяк». Методическое пособие. Часть II. — Комитет по физической культуре и спорту при Совете Министров Латвийской ССР. Научно — методический совет. — Рига, 1971(1972). — 58 с. — 1100 экз.
+17. Литвинович В. С. и Швандерс Ю. «Гамбит Кукуева», «Обратный косяк». Методическое пособие. Часть I и II. — Комитет по физической культуре и спорту при Совете Министров Латвийской ССР. Научно — методический совет. — Рига, 1971(1972). — 50 с. — 1100 экз.
+18. Литвинович В. С. и Швандерс Ю. «Гамбит Кукуева», «Обратный косяк». Методическое пособие. Часть III и IV. — Комитет по физической культуре и спорту при Совете Министров Латвийской ССР. Научно — методический совет. — Рига, 1972. — 57 с. — 1100 экз.
+19. Литвинович В. С., Швандерс Ю. «Обратный кол». Лекторий. — Федерация шашек Латвийской ССР. — Рига, 1973—1974. — 35 с. — тираж не указан.
+20. Арустамов Ю. А. Шашечный дебют «Игра Филиппова» / Методическое пособие/ — Республиканско — шашечный клуб. — Баку, 1973. — 30 с. — тираж не указан.
+21. Габриелян В. Р. и Злобинский А. Шашечные дебюты «Ленинградская защита» /в 4 — х частях/, «Игра Дьячкова». — Республиканско—шашечный клуб. — Баку, 1975. — 69 с. — тираж не указан.
+22. Литвинович В. С. Основные системы дебюта «Кол». Выпущено в виде издания "SASKES ". Informacinis laiskas. — Vilnius — 1975. (Шашки. Информационное письмо, 1974 г., июль. — Комитет по физической культуре и спорту при Совете Министров Латвийской ССР. Литовский шахматно—шашечный клуб. — 62 с — тираж не указан.
+23. Вигман В. и Швандерс Ю. «Игра Филиппова». Лекторий. — Федерация шашек Латвийской ССР. — Рига, 1975. — 64 с. — тираж не указан.
+24. Вигман В. и Швандерс Ю. «Игра Бодянского». Лекторий. — Федерация шашек Латвийской ССР. — Рига, 1975. — 58 с. — тираж не указан.
+25. Вигман В. и Швандерс Ю. «Отказанная игра Бодянского». Лекторий. — Федерация шашек Латвийской ССР. — Рига, 1975. — 25 с. — тираж не указан.
+26. Злобинский А. Д. (под общей редакцией Габриеляна В. Р.) «Обратная игра Бодянского». — Учебно—методическое пособие по шашкам. ДСО «Йыуд» Эстонской ССР. — (Таллин), 1975. — 70 с. — тираж не указан.
+27. Злобинский А. Д.(под общей редакцией Габриеляна В. Р.) Шашечный дебют «Перекресток». — Республиканско—шашечный клуб. — Баку, 1976. — 52 с. — 200 экз.
+28. Злобинский А. Д. «Игра Каулена», «Отказанная игра Каулена». — ДСО «Йыуд» Эстонской ССР. — Таллин, 1975. — 59 с. — тираж не указан.
+29. Литвинович В. С., Швандерс Ю. «Тычок». Лекторий — ДСО «Йыуд» Эстонской ССР. — Таллин, 1976. — 70 с. — тираж не указан
+30. Абациев Н. В. В помощь играющим в шашки. Часть I. Гамбит Кукуева. Методическое пособие. — Орденов Октябрьской Революции и Красной Звезды Центральный дом Советской Армии имени М. В. Фрунзе. Центральный шахматный клуб Вооруженных сил СССР. — М., 1976. — 27 с — тираж не указан.
+31. Абациев Н. В. В помощь играющим в шашки. Часть II. Косяк. Методическое пособие. — Орденов Октябрьской Революции и Красной Звезды Центральный дом Советской Армии имени М. В. Фрунзе. Центральный шахматный клуб Вооруженных сил СССР. — М., 1980. — 58 с — тираж не указан.
+32. Чернопищук А. С., Горин А. П., Высоцкий В. М. Дебют «Косяк». Часть первая. Методическое пособие по русским шашкам. — Государственный Комитет Азербайджанской ССР по физической культуре и спорту, кооператив «Досуг». — Баку, 1989. — 105 с — 1000 экз.
+33. Ряек П. М. Шашечный дебют «Обратный косяк». Часть I. Методические рекомендации по обучению игры в шашки. — Симферопольский кооператив «Физкультура и здоровье» — (Симферополь), 1989. — 89 с — 100 экз.
+34. Ряек П. М. Шашечный дебют «Обратный косяк». Часть II. Методические рекомендации по обучению игры в шашки. — Симферопольский кооператив «Физкультура и здоровье» — (Симферополь), 1989. — 87 с — 100 экз.
+35. Мурсалов Э. Н. Дебют «Кол». Методическое пособие по русским шашкам. — Государственный Комитет Азербайджанской ССР по физической культуре и спорту, кооператив «Досуг». — Баку, 1989. — 109 с — 1000 экз.
+36. Мурсалов Э. Н. Дебют «Гамбит Кукуева». Методическое пособие по русским шашкам. — Государственный Комитет Азербайджанской ССР по физической культуре и спорту, кооператив «Досуг». — Баку, 1989. — 101 с — 1500 экз.
+37. Кустарев Ю. С. Дебют «Городская партия». Часть 1. Методическое пособие по русским шашкам. — Государственный Комитет Азербайджанской ССР по физической культуре и спорту, кооператив «Досуг». — Баку, 1989. — 137 с — 500 экз.
+38. Кустарев Ю. С. Дебют «Городская партия». Часть 2. Методическое пособие по русским шашкам. — Государственный Комитет Азербайджанской ССР по физической культуре и спорту, кооператив «Досуг». — Баку, 1989. — 58 с — 500 экз.
+39. Габриелян В. Р. Дебют «Перекресток». Методическое пособие по русским шашкам. — Государственный Комитет Азербайджанской ССР по физической культуре и спорту, кооператив «Досуг». — Баку, 1989. — 66 с — тираж не указан.
+40. Габриелян В. Р. "Энциклопедия дебютов с выборочным жребием (часть первая). Методическое пособие по русским шашкам. — Государственный Комитет Азербайджанской ССР по физической культуре и спорту, кооператив «Досуг». — Баку, 1989. — 68 с — 1000 экз.
+41. Косенко А. А. Дебют «Ленинградская защита». Методическое пособие по русским шашкам. — Государственный Комитет Азербайджанской ССР по физической культуре и спорту, кооператив «Досуг». — Баку, 1989. — 97 с — 1000 экз.
+42. Чернопищук А. С., Горин А. П., Высоцкий В. М. Дебют «Косяк». Часть вторая. Методическое пособие по русским шашкам. — Государственный Комитет Азербайджанской ССР по физической культуре и спорту, кооператив «Досуг». — Баку, 1989. — 106 с — без тиража.
+43. Микерин И. И. Шашечный дебют «Отказанный кол» и «Двойной кол». Методические рекомендации по обучению игры в шашки. — Симферопольский кооператив «Физкультура и здоровье» — (Симферополь), 1990. — 54 с — тираж не указан.
+44. Микерин И. И. Дебюты: «Обратный кол» и «Отказанный кол». Методические пособие по русским шашкам. — Государственный Комитет Азербайджанской ССР по физической культуре и спорту, кооператив «Досуг». — Баку, 1990. — 68 с — 1000 экз.
+45. Чернопищук А. С., Высоцкий В. М. Дебюты: «Обратный перекресток», «Отказанный обратный перекресток». Методическое пособие по русским шашкам. — Государственный Комитет Азербайджанской ССР по физической культуре и спорту, кооператив «Досуг». — Баку, 1990. — 75 с — 1000 экз.
+46. Реяк П. М. Дебют «Обратный кол». Методическое пособие по русским шашкам. — Кооператив «Каисса». — Таллин, 1991. — 65 с — тираж не указан.
+47. Акимов Р. Ф. Вилочка. — Федерация шашек республики Саха (Якутия), Торгово — туристическая фирма «Рейтинг — Плюс». — Якутск, 1998. — 48 с — 1000 экз.
+48. Маковенко В. Я. Русские шашки (новая дебютная стратегия, игра за белых). — М., 1998. — 104 с — 700 экз.
+49. Чернопищук А. С., Горин А. П., Высоцкий В. М. Дебют «Косяк». Часть 3.(Косяк Селезнева). Методическое пособие по русским шашкам. — Центральный Московский шашечный клуб. — М., 1999. — 48 с — 90 экз.
+50. Высоцкий В. М. «Косяк Саргина». Методическое пособие по русским шашкам. — Центральный Московский шашечный клуб. — М., 1999. — 36 с — 90 экз.
+51. Бодров И. М., Высоцкий В. М. «Центральная партия». Методическое пособие по русским шашкам. — Центральный Московский шашечный клуб. — М., 1999. — 44 с — 90 экз.
+52. Сергеев Ф. В. «Обратная игра Бодянского». Часть 1. Методическое пособие по русским шашкам. — Клуб любителей шашечной игры. — М., 2000. — 48 с — 90 экз.
+53. Злобинский А. Д. Дебют «Кол». Часть 1. Методическое пособие по русским шашкам. — Клуб любителей шашечной игры. — М., 2000. — 52 с — 100 экз.
+54. Злобинский А. Д. Дебют «Кол». Часть 2. Методическое пособие по русским шашкам. — Клуб любителей шашечной игры. — М., 2000. — 52 с — 100 экз.
+55. Злобинский А. Д. Дебют «Обратный кол». Методическое пособие по русским шашкам. — Клуб любителей шашечной игры. — М., 2001. — 56 с — 100 экз.
+56. Злобинский А. Д. Дебют «Обратная игра Бодянского». Часть 1. Методическое пособие по русским шашкам. — Клуб любителей шашечной игры. — М., 2001. — 52 с — 100 экз.
+57. Злобинский А. Д. Дебют «Обратная игра Бодянского». Часть 2. Методическое пособие по русским шашкам. — Клуб любителей шашечной игры. — М., 2001. — 52 с — 100 экз
+58. Злобинский А. Д.  Дебют «Обратная игра Бодянского». Часть 3. Методическое пособие по русским шашкам. — Клуб любителей шашечной игры. — М., 2001. — 32 с — 100 экз
+59. Федорук А. А., Бодров И. М. Системы с 1. e3 — f4. «Игра Матасова — Петрова» и безымянные дебюты. Методическое пособие по русским шашкам. — Клуб любителей шашечной игры. — М., 2001. — 32 с — 90 экз.
+60. Бодров И. М., Высоцкий В. М. «Игра Боброва». Методическое пособие по русским шашкам. — Клуб любителей шашечной игры. — М., 2001. — 20 с — 100 экз.
+61. Кацтов Ф. Е., Высоцкий В. М. «Отказанная игра Каулена». Методическое пособие по русским шашкам. — Клуб любителей шашечной игры. — М., 2001. — 20 с — 100 экз.
+62. (Злобинский А. Д.) Киевская защита. Шашки. Теория дебюта. — (Баку, 1976). — 79 с — без тиража.
+63. Злобинский А. Д. Киевский кол. — (Баку), 1976. — 36 с — без тиража.
+64. Литвинович B, C. «Игра А.Петрова» и прочие системы с 1. gh4. Март — 1976 год. — 90 с — без тиража.
+65. (Злобинский А. Д.) Шашечный дебют «Жертва Кукуева». — (Таллин, 1976). — 98 с — без тиража.
+66. Герцензон Б. М. Шашечные дебюты «Отказанный перекресток», «Обратный перекресток», «Вилочка», «Перекресток» — (Ленинград), 1976. — 37 с — без тиража.
+67. Спанцирети Н. П. Обратная игра Бодянского. Методическое пособие по теории шашечных дебютов. — 1976 — 69 с — без тиража.
+68. (Adamovic V., Subbotin A) Centrala partuja (Центральная партия). — (Riga, 1980) — 18 с — без тиража.
+69. Ивашко Е. В. Новое в русских шашек. Часть 1. c3 — d4 — f6 — g5 2. d2 — c3. — Днепропетровск, 1997 — 16 с — 1000 экз.
+70. V. Vlalantinas Neperspektyvus debiutai paprastosiose saskese/ Individualus debiutinis repertuaras idalis. — Siauliai, 2000 — 16 с — без тиража.
+71. Материков С. Н. Вилочка. Методическое пособие — Киев, 2000 — 46 с — без тиража.
+72. Материков С. Н. Игра Рамма — Цукерника. Методическое пособие — Киев, 2000 — 46 с — без тиража.
+73. Материков С. Н. Атака шашки g5. Методическое пособие — Киев, 2000 — 39 с — без тиража.
+74. Материков С. Н. Новое начало. Методическое пособие — Киев, 2000 — 34 с — без тиража.
+75. Петрова Л. В. О дебютных промашках в русских шашках. Сборник дебютных ловушек, заканчивающихся комбинациями (Русские шашки). — С.— Пб., 2001 — 90 с — без тиража.
+76. V. Adamovics un A. Subbotins Akla partuja (Слепая партия). — 7 с — без тиража.
+77. Kiievi kaitse. (Киевская защита). — 62 с — без тиража.
+78. (Svanders. J.) Teoretiskais biletens. Apgriezta pilsetas atklatne (Обратная городская партия). — (Riga, 1976) — 29 с — без тиража.
+79. Щеглов Н. И. «Игра Шмульяна». Красноармейский шахматно — шашечный клуб. — 47 с — без тиража.
+80. Bodjanski kaitse (Обратная игра Бодянского). — 44 с — без тиража.
+81. Ленинградская защита. — 70 с — без тиража.
+82. Кустарев Ю. С. Дебют «Обратная игра П. Бодянского» — 50 с — без тиража.
+83. «Отказанный косяк» — 62 с — без тиража.
+84. «Защита С.Дьячкова» — 38 с — без тиража.
+85. «Классический косяк с 5… fg5» — 107 с — без тиража.
+86. Энциклопедия дебютов с выборочным жребием. 1.cd4 — 38 с — без тиража.
+87. Энциклопедия дебютов с выборочным жребием. 1.cf4 — 29 с — без тиража.
+88. Абрамов О. С. Дебют Отыгрыш. 2003
+89. Абрамов О. С. Отказанная обратная городская партия. 2005
+90. Высоцкий В. М., Горин А. П. Дебютная энциклопедия по русским шашкам. Том I. Системы с 1.c3-b4. Дебют Косяк. М.:2004.
+91. Высоцкий В. М., Горин А. П. Дебютная энциклопедия по русским шашкам. Том II. Системы с 1.c3-b4. Дебюты: Косяк, Обратный косяк, Отказанный косяк, Обратная городская партия. М.: 2005.
+92. Высоцкий В. М., Горин А. П. Дебютная энциклопедия по русским шашкам. Том III. Системы с 1.c3-b4. Дебюты: Отказанный косяк, Обратная старая партия, Обратная игра Бодянского, Обратный тычок, Обратная городская партия.  М.: 2006
+93. Высоцкий В. М., Горин А. П. Дебютная энциклопедия по русским шашкам. Том ІV. Системы с 1.c3-b4. Дебюты: Обратный тычок, Безымянная партия, Безымянные дебюты, Игра Блиндера, Обратный отыгрыш с 4. fe3, Разменный косяк, Тычок с 1. ... fe5, Отказанная обратная городская партия. М.: 2007
+94. Высоцкий В. М., Цинман Д. Л. Дебютная энциклопедия по русским шашкам. Том V. Системы с 1.с3-d4. Городская партия. Системы с 1.а3-b4. Игра Бодянского. Отказанная игра Бодянского. М.: 2014
+95. Высоцкий В. М. Дебютная энциклопедия по русским шашкам. Том І. 2-е издание, исправленное и дополненное. М.: 2018 
+96. Высоцкий В. М. Дебютная энциклопедия по русским шашкам. Том ІІ. 2-е издание, исправленное и дополненное. М.: 2018
+97. Наумик Василий, Парчук Игорь. Дебютная энциклопедия летающих шашек. Сильнейшие дебютные планы. 2014
+
+Публикации в журналах
+Дамбрете Dambrete
+1. Kllis — Кол // Damrete. 1971. g. — Nr. 1, 2
+2. Pilsetas atklatne — Городская партия // Damrete. 1971. g. — Nr. 3, 4
+3. Kukujeva gambits — Гамбит Кукуева (жертва) // Damrete. 1971. g. — Nr. 4, 5
+4. Ramis — Косяк //Damrete. 1971. g. — Nr. 5, 6, 7
+5. Apgrieztais ramis — Обратный косяк //Damrete. 1971.g. — Nr.8
+6. Centrala partija — Центральная партия //Damrete. 1971. g. — Nr. 9
+7. Apgrieztais kllis — Обратный кол //Damrete. 1971. g. — Nr. 10
+8. Veca partija — Старая партия //Damrete. 1971. g. — Nr. 11, 12
+9. Apgriezta Bodjanska spele — Обратная игра Бодянского //Damrete. 1971, — Nr. 12, // Damrete. 1972 — Nr.1, 2, 3
+10. Kogana aizsardzlba — Защита Когана //Damrete. 1972. g. — Nr. 3, 4
+11. Sokova aizsardzlba — Защита Сокова //Damrete. 1972. g. — Nr. 4, 5
+12. Medkova spele — Игра Медкова //Damrete. 1972. g. — Nr. 5
+13. Atsite — Отыгрыш //Damrete. 1972. g. — Nr. 6, 7
+14. Bodjanska spele — Игра Бодянского //Damrete. 1972. g. — Nr. 7, 8, 9
+15. Atraidita Bodjanska spele — Отказанная игра Бодянского //Damrete. 1972. g. — Nr. 9
+16. Uzbrukums kaulinam g5 — Атака шашки g5 //Damrete. 1972. g. — Nr. 10
+17. Beznosaukuma atklatne (1. cd4fg5 2. bc3 gf6 3. cb2) //Damrete. 1972. g. — Nr. 10
+18. Apgriezta dure ar 1. cd4 — Обратный тычок с 1. cd4 //Damrete. 1972. g. — Nr. 11
+19. Akla partija — Слепая партия //Damrete. 1972. g. — Nr. 11
+20. Apgriezta veca partija — Обратная старая партия //Damrete. 1972. g. — Nr. 12
+21. Apgriezta pilsetas atklatne ar 3. …bс5 Обратная городская партия с 3… bс5.// Damrete. 1973. g. — Nr. 1
+Apgriezta pilsetas atklatne ar 3. …fg5 Обратная городская партия с 3… fg5 //Damrete. 1973. g. — Nr. 1, 2
+22. Ieningradiesu aizsardzlba — Ленинградская защита //Damrete. 1973. g. — Nr. 3, 4
+23. Dure — Тычок //Damrete. 1973. g. — Nr. 5, 6
+24. Reta atklatne — Редкое начало //Damrete. 1973. g. — Nr. 7
+25. Bobrova spele — Игра Боброва //Damrete. 1973. g. — Nr. 7, 8
+26. Krustojums — Перекресток //Damrete. 1973. g. — Nr 8, 9, 10
+27. Apgrieztais krustojums — Обратный перекресток //Damrete. 1973. g. — Nr. 10, 12
+28. DakSina — Вилочка //Damrete. 1973. g. — Nr. 2
+29. Atraidita apgriezta pilsetas atklatne — Отказанная обратная городская партия // Damrete. 1974. g. — Nr. 1, 2
+30. Jauna atklatne — Новое начало //Damrete. 1974. g. — Nr. 3, 4
+31. Romaniceva spele — Игра Романычева //Damrete. 1974. g. — Nr. 5, 6
+32. Djackova spele — Игра Дьячкова //Damrete. 1974. g. — Nr. 7, 8
+33. KijevieSu aizsardzlba — Киевская защита //Damrete. 1974. g. — Nr. 9, 10
+34. KijevieSu kllis — Киевский кол //Damrete. 1974. g. — Nr. 10, 11, 12
+35. Filipova spele — Игра Филипова //Damrete. 1975. g. — Nr. 1
+36. Atraidita Fijipova spele — Отказанная игра Филипова //Damrete. 1975. g. — Nr. 2, 3
+37. Kaulena spele — Игра Каулена //Damrete. 1975. g. — Nr. 3
+38. SoSina — Harjanova gambits — Гамбит Шошина — Харьянова //Damrete. 1975. g. — Nr. 4
+39. Petrova spele — Игра Петрова //Damrete. 1975. g. — Nr. 4, 5
+40. Atteikta Petrova spele — Отказанная игра Петрова //Damrete. 1975. g. — Mr, 5
+41. Pilsetas atklatne ar 3…. ba5 — Разменная городская партия //Damrete. 1977. g. — Nr. 10, 11, 12
+«Dambretes» № 1 - 7 1987
+Atklātņu teorija
+Apgrieztā Bodjanska spēle ar 2... dc5 3. bc3
+Oбpaтная Иrpa Бодянского c 2 . . . dc5 3. bc3
+(Nobeigums. Sākumu sk. «Dambretes» 1987. gada 1., 2., 3., 4., 5., 6 un 7. numurā.)
+Vispirms pasfastTsim par turpmāk apskatāmajiem variantiem, piebilstot, ka atklātņu shēmas, kas radīsies pēc
+2. . . dc5 3. dc3; 2. . . dc5 3. fg3, kā arī 2 ... dc5 3. hg3, analīzēs centīsimies skart pēc iespējas mazāk.
+1. cd4 hg5 2. gh4 dc5 3. bc3 gh6 4. fg3.
+I. 4... cd6 5. cb4 (5.cb2 — pirmais variants; 5. gf4ba5 6. d:b6 a:c7 7. hg3 ab6 — otrais variants un
+7 ... dc5 — trešais variants; 5. ab2 ba5 — ceturtais variants un 5. ab2 de5 — piektais variants)
+5 ... ba5 6. d:b6 a:c7 7. de3 (7. gf4 — sestais variants; 7. ba5 — septītais variants)
+7 ... ab6 — astotais variants, 7 ... dc5 — devītais variants un 7 ... de5 — desmitais variants.
+II. 4 ... ed6 5. gf4 (5. cb4 fe5 — vienpadsmitais variants; 5. cb4 ba5 — divpadsmitais variants)
+5 ... fe5 6. d:f6 g:e7 7. ab2 ba5 8. cd4 cb6 9. bc3 (9. gf2 — trīspadsmitais variants)
+9 ... hg7 — četrpadsmitais variants) 9 ... cb4 — piecpadsmitais variants.
+«Dambretes» № 8 - 9 1987
+Atklātņu teorija
+Apgrieztā Bodjanska spēle ar 2 ... dc5 3. dc3
+(Nobeigums. Sākumu sk. «Dambretes» 1987 gada 8., 9 numurā )
+Oбpaтная Иrpa Бодянского c 2. .. dc5 3. dc3
+Pēc gājieniem 1. cd4 hg5 2. gh4 dc5 3. dc3 gh6 aplūkosim trīs variantus.
+I. 4. fg3 ed6 5. cb4 (5. ef4 — pirmais variants) 5 ... fe5 6. d:f4 g:e7 — otrais variants.
+II. 4. hg3 ed6 5. cb4 fe5 — trešais variants.
+«Dambretes» № 9 1987
+Atklātņu teorija
+Apgriezta Bodjanska spēle ar 2.... dc5 3. fg5
+Oбpaтная Иrpa Бодянского c 2... dc5 3. dc3 ., c 2 ... dc5 3. fg5
+«Dambretes» № 9 - 10 1987
+Atklātņu teorija
+Apgrieztā Bodjanska spēle ar 2... dc5 3. fg3
+Oбpaтная Иrpa Бодянского c 2. .. dc5 3. fg3
+(Nobeigums. Sakumu sk. «Dambretes» 1987. gada 9., 10 numurā.)
+«Dambretes» № 10 -11 1987
+Atklātņu teorija
+Apgrieztā Bodjanska spēle ar 2... dc5 3. hg3
+Oбpaтная Иrpa Бодянского c 2 ... dc5 3. hg3
+(Nobeigums. Sākumu sk «Dambretes» 1987. gada 10.,11 numurā.)
+Šeit apskatīsim divus variantus, kas izveidojas pēc 1. cd4 hg5 2. gh4 dc5 3. hg3 gh6 4. gf4 ed6 5. bc3
+(5. de5 — pirmais variants) 5 ... fe5 — otrais variants.
+«Dambretes» № 12 1987
+Atklātņu teorija
+Apgrieztā Bodjanska spēle ar 2... ba5 3. fg3
+Oбpaтная Иrpa Бодянского c 2 ... ba5 3. fg3
+1. cd4 hg5 2. gh4 baS 3. fg3 cb6.
+Tālāk aplūkosim sekojošus variantus:
+3 ... ab4 4. a-c5 d:b4 5 gf4 gh6 6. ba3 cd6 7. a:c5 d:b4 8. ef2 ba3 9. dc5
+— pirmais variants, un 9. fe5 — otrais variants, un 9. hg3 — trešais variants
+3 ... ab6 4. gf4 gh6 5. hg3 dc5 6. bc3 ed6 7. gh2 fe5 8. d:f6 g:e7 =.
+4. gf4.
+4. gf2 dc5 5. dc3 — ceturtais variants un 5. gf4 — piektais variants
+4 ... gh6 5. hg3 dc5.
+Pēc nomaiņas 5 ... bc5 6. d:b6 a:c7 apskatīsim 7 bc3 — sestais variants un 7. dc3 — septītais variants.
+6. dc3.
+6. bc3 — astotais variants.
+6 ... ed6 7. deS — devītais variants un 7. ef2 — desmitais variants.
+«Dambretes» № 12 1987., № 1-4 1988
+Atklātņu teorija
+Apgriezta Bodjanska spēle ar 2 ... ba5 3. fg3
+Oбpaтная Иrpa Бодянского c 2 ... ba5 3. fg3
+(Nobeigums. Sākumu sk. «Dambretes» 1987. gada 12. numurā, 1988. gada 1., 2.,3 un 4. numurā.)
+«Dambretes» № 5 - 7 1988
+Atklātņu teorija
+Apgrieztā Bodjanska spēle ar 2 ... ba5 3. dc3 gh6
+Oбpaтная Иrpa Бодянского c 2 ... ba5 3. dc3 gh6
+(Nobeigums Sākumu sk «Dambre¬tes» 1988 gada 5 , 6 numurā )
+«Dambretes» № 7 1988
+Atklātņu teorija
+Apgriezta Bodjanska spēle ar 2... ba5 3. dc5
+Oбpaтная Иrpa Бодянского c 2 .. . ba5 3. dc5
+Tā kā šeit ir sakrājies daudz materiāla, tad variantus dalīsim grupās jeb sistēmās.
+1.7... ab4! — pirmais variants.
+II. 7 ... de7 — otrais variants.
+III. 7... fe5 8. hg3 gf6 (8 ... ed4 — trešais variants)
+9. fe3 hg7 (9 . . . ab4— ceturtais variants) 10. ef4 — piektais variants,
+10. bc3 — sestais variants un 10. gf4 — septītais variants.
+IV. 7... bc5 — astotais variants.
+V. 7... bc7 8. bc3 bc5
+9. ab2 cd6 (9 ... cb4 10. ba3 — devītais vaiants)
+10. ed2 (10. hg3 — desmitais variants) 10... dc7
+(10 ... de5 — vienpadsmitais variants) 11. fe3 — divpadsmitais variants un
+11. fg3 — trīs padsmitais variants.
+VI. 7 ... bc7 8. bc3 bc5
+9. fe3 (9. hg3 cd6 10. ef4 — četrpadsmitais variants;
+10. ba3 — piecpadsmitais variants un
+10. gh2 — sešpadsmitais variants) 9.. . cd6 10. hg3 cb4 11. ed2 ba3 12. ab2
+(12. ef4 — septiņpadsmitais variants) 12 ... ab6 13. cd4! — astoņpadsmitais variants;
+13. ed2 — deviņpadsmitais variants un 13. gh2 — divdesmitais variants.
+«Dambretes» № 7 - 12 1988 ., № 1-5 1989
+Atklātņu teorija
+Apgrieztā Bodjanska spēle
+ar 2 ba5 3. dc5
+Oбpaтная Иrpa Бодянского c 2 . . . ba5 3. dc5
+(Turpinājums. Sākumu sk. «Dambretes» 1988. gada 7., 8., 10., 11. un 12.
+1989, g. 1.,2., 3., 4., 5 numurā,)
+«Dambretes» № 6-7 1989
+Atklātņu teorija
+Apgrieztā Bodjanska spēle ar 3. dc5 un 5. ed4
+Oбpaтная Иrpa Бодянского c 3. dc5 и 5. ed4
+(Nobeigums. Sākumu sk. «Dambretes» 1989. gada 6.,7. numurā.)
+«Dambretes» № 8 1989
+Atklātņu teorija
+Kukujeva gambīts
+Жepтвa Kyкyeвa
+Pirms sākam aplūkot Kukujeva gambītas variantas, pastāstīsim par divām atklātņu lamatām.
+«Dambretes» № 9 1989
+Atklātņu teorija
+Kukujeva gambīts   
+Жертва Кукуева
+III Mazuroka variants Bapиант Мазурка
+(Nobeigums. Sākumu sk. «Dambretes» 1989. gada 8. numurā.)
+«Dambretes» № 9 - 10 1989
+Atklātņu teorija
+Kukujeva gambīts ar melno gājienu dc7
+Жepтвa Kyкyeвa с ходом черных dc7
+(Turpinājums Sākumu sk «Dambretes» 1989 gada 9 -10 numurā ]
+1. cd4 fg$ 2. dc5 b:d4 3. e:c5 d:b4 4. a:c5 gf4 5. g:e5 cb6 6. cd6 e:c5 7. hg3 cb4 8. gf4 ba3 9. bc3
+(9. fe3 ba5 10. gf2 dc7 11. fg3 cb6 12. ef6 g:e5 13. f:d6 — pirmais variants)
+9 ... ba5 10. fe3 (10. fg3 ab6 11. gh4 dc7 — otrais variants) 10... dc7
+(10 ... ab6 11. gf2 dc7 12. fg3 cd6 13. e:c7 b:d8 — trešais variants).
+11.gh2 (11.ef2 —ceturtais variants; 11. gf2 — piektais variants) 11 ... cb6 12. ef2 bc5 13. fg3 cb4
+un 14. ed6 — sestais variants vai 14. ed4 — septītais variants.
+«Dambretes» № 11 1989
+Atklātņu teorija
+Kukujeva gambīts  ar nomainu gf6
+Гамбит Kyкyea c разменом gf6
+«Dambretes» № 12 1989
+Atklātņu teorija
+Kukujeva gambīts ar 13. ed6
+Гамбит Kyкyea c 13. ed6
+Вот Гамбит (Жертва) Кукуева за 1990 год в журнале «Dambretes» № 1 - 12 №№ 1990. Потом с учетом Латышского языка предложу с 1980 года.
+«Dambretes» № 1 - 4 1990
+Atklātņu teorija  Kukujeva gambīts ar 8. gf4 de7 Гамбит Kyкyeвa c 8. gf4 de7(Nobeigums. Sākumu sk. «Dambretes» 1990. gada 1., 2. un 4. numurā.)
+«Dambretes» № 4 - 6 1990
+Atklātņu teorija Kukujeva ar 10 ...  bc7 un 14 ... cd6
+Гамбит Kvкveaa c 10 ... bc7 И 14 ... cd6 (Turpinājums. Sakumu sk. «Dambretes» 1990. gada 4. un 6. numurā.)
+«Dambretes» № 6 - 8 1990
+Atklātņu teorija Kukujeva gambīts ar 10 ... bc7  un 14 ... hg7
+Жepтвa Kyкyeвa c 10 ... bc7 и 14 ... hg7 (Turpinājums. Sakumu sk. «Dambretes» 1990. gada 6 .7. 8. numurā.)
+«Dambretes» № 9 - 11 1990
+Atklātņu teorija Kukujeva gambīts ar10 ... bc7 UN 11. gf2 ba3
+Жepтвa Kyкyeвa c 10 ... bc7 11. gf2 ba3 (Turpinājums. Sakumu sk. «Dambretes» 1990. gada 8. un 9. 10. 11. numurā.)
+«Dambretes» № 12 1990
+Atklātņu teorija Klasiskie  Kukujeva atklātnes varianti (ar gh2 vai ef2)
+Классические варианты гамбита Кукуева ( с gh2 или ef2 )
+«Dambretes» № 7 - 12 1985
+Atklātņu teorija
+Apgriezta Bodjanska spēle ar 2 ... gh6 3.fg3
+Oбpaтная Иrpa Бодянского c 2 ... gh6 3. fg3
+(Nobeigums. Sākumu sk. «Dambretes» 1985. gada 7., 8., 9., 10., 11. un 12. numurā. )
+Ka parasti vispirms iepazīstināsim ar variantiem, kurus turpmāk centīsimies izklāstīt lasītājiem.
+1. cd4 hg5 2. gh4 gh6 3. fg3. Talak aplūkosim:
+I. 3 ... ba5 — pirmais variants.
+II. 3... de5 4. gf2 (ja 4. gf4 e:c3, tad 5. d:b4 — otrais variants; 5. b:d4 — trešais variants;
+4. gf4 e:g3 — ceturtais variants) 4... e:c3 5. d:b4 (5. b:d4 ba5 — piektais variants;
+5. b:d4 bc5 — sestais variants) 5 ... ba5 — septītais variants; 5 ... bc5 — astotais variants;
+5 ... cd6 — devītais variants; 5 ... ed6 — desmitais variants.
+III. 3 ... fg7 — vienpadsmitais variants.
+«Dambretes» № 12 1985 № 1 - 5 1986
+Atklātņu teorija
+Apgrieztā Bodjanska spēle ar 2 ... gh6 3. dc5
+Oбpaтная Иrpa Бодянского c 2 . .. gh6 3. dc5
+(Nobeigums. Sākumu sk. «Dambretes» 1985. gada 12., 1986. gada 1., 2., 3., 4. un 5. numurā. )
+Lai mušu lasītāji varētu vieglāk orientēties atklāt¬nes variantos, kā vienmēr, vispirms sniedzam «satura» rādītāju.
+1. cd4 hg5 2. gh4 gh6 3. dc5 b:d4 4. e:c5 d:b4 5. a:c5.
+I. 5 ... cd6 6. bc3 (6. ba3 — pirmais variants) 6 ... d:b4 7. c:a5 gf4 8. ab2 bc7 9. bc3 un
+9 ... ed6 — otrais variants, bet 9... fg7 — trešais variants.
+II. 5 ... fg7 6. bc3 cb6 7. cd4 bc7 8. de5 (8. hg3 — ceturtais variants) 8 ... b:d4
+(8... f:d4 — piektais variants) 9. e:c3 gf4 10. ab2 fg5 11. h:f6 g:e5
+12. ba3 hg7 13. ab4 (13. cb4 ab6, — sestais variants,
+13. cb4 cb6 — septītais variants) 13 ... ab6 (13 ... cb6 — astotais variants)
+14. de3 — devītais variants, 14. fg3 — desmitais variants.
+III. 5... gf4 6. bc3 fg5 (ja 6 ... fg7, tad 7. ab2 cd6 — vienpadsmitais variants, bet 7. ab2 fg5 —
+divpadsmitais variants) 7. h:f6 e:g5 8. cd4 — trīspadsmitais variants un 8. cb4 — četrpadsmitais variants.
+«Dambretes» № 6 - 8 1986
+Atklātņu teorija
+Apgrieztā Bodjanska spēle ar 2 ... gh6 3. dc3
+Oбpaтная Иrpa Бодянского c 2 ... gh6 3. dc3
+(Nobeigums. Sākumu sk. «Dambretes» 1986. gada 6. 7 un 8. numurā. )
+Lai gan apkopotais materiāls par minēto atklātnes sistēmu nav liels, satura rādītājs tomēr
+atvieglinās iepazīšanos ar turpmākajiem variantiem.
+1. cd4 hg5 2. gh4 gh6 3. dc3.
+I 3... ba5 4. cd2 (4. ab4 — pirmais variants) 4... de5 5. dc5 cb6?— otrais variants un 5 ... f4 — trešais variants.
+II. 3 ... fg7 – ceturtais variants.
+III. 3... de5 4. ab4 (4. dc5 — piektais variants, 4. cd2? — sestais variants)
+4 ... gf4 5. e:g5 h:f4 6. ba3 — septītais variants un 6. bc5 — astotais variants.
+«Dambretes» № 9 - 12 1986
+Atklātņu teorija
+Apgrieztā Bodjanska spēle ar 2 ... de5
+Oбpaтная Иrpa Бодянского c 2 ... de5
+(Nobeigums. Sakumu sk. «Dambretes» 1986. gada 9., 10., 11. ,12. numurā.)
+Vispirms piedāvājam aplūkojamā varianta īsu satura rādītāju.
+1. cd4 hg5 2. gh4 de5.
+I. 3. bc3 gh6 (pēc 3 ... ed6 4. fg3 ba5 — pirmais variants, bet 4 ... ef4 5. g:e5 d:f4 raksturos otro variantu)
+4. ab4 ba5 5. ab2 cd6 6. ba3 bc7 7. fg3 gf4 8. e:g5 h:f4 9. ef2 — trešais variants un 9 ... gf2 —ceturtais variants.
+II. 3. dc3 ed6.
+Izveidojusies «Sošma-Harjanova gambīta» pozīcija («Гамбит Шошина-Харьянова»), kas parasti rodas pēc citiem sākuma gājieniem:
+1. gh4 fe5 2. ed4 ef6 3. de3 hg5.
+4. ed2 ba5 5. fg3 cb6 (5 ... ef4 — piektais variants) 6. gf4 e:g3 7. h:h6 dc5 — sestais variants un 7 ... bc7 — septītai s variants.
+III. 3. hg3 e:c3 4. b:d4 ba5 (ja 4. . . ed6, tad 5. gf4 gh6 6. de5 — astotais variants un 6 fg3 — devītais variants) 5. ab2 gh6 6. gf4 cb6 7. dc3.
+Tālāk tiks apskatīti: 7... bc5 — desmitais variants, 7... ed6 — vienpadsmitais variants, 7... fe5 — divpadsmitais variants un
+7... fg7! — trīspadsmitais va¬riants.
+IV. 3. fg3 e:c3 4. d:b4 gh6 5. gf4 (5. cd2 — četrpadsmitais variants) 5 ... ba5 — piecpadsmitais variants un
+5 ... ed6 — sešpadsmitais variants.
+«Dambretes» № 6 - 12 1983
+Beznosaukuma atklātņu sistēmas
+(I. cb4 de5 2. ba5 bc5)
+Безымянные начала I - VIII. sistēmas
+(Nobeigums. Sākumu sk. «Dambretes» 1983. gada 6., 7., 8., 9., 10., 11 un 12. numurā)
+«Dambretes» № 1 1984
+Beznosaukuma atklātņu sistēma
+(I. cb4 de5 2. ba5 fg5)
+Безымянное начало
+Pēc 1. сb4 de5 2. ba5 fg5 aplūkosim šādus variantus:
+I. 3. gh4 (3. ef4 un 3. gf4) 3 ... gf4 4. e:g5 h:f4 — pirmais variants.
+II. 3. ed4 e:c3 4. b:d4 — otrais variants.
+III. 3. ab4 gh4 4. dc3 gf6 5. ed4 e:c3 6. b:d2 — trešais variants.
+«Dambretes» № 2 - 5 1984
+Atklātņu teorija
+Vecā partija ar 3. cb4
+Старая партия c 3. cb4 (Nobeigums. Sākumu sk. «Dambretes» 1984. gada 2., 3., 4. un 5. numurā)
+Lai vieglāk orientētos turpmāk aplūkoto variantu klāstā, sniedzam satura rādītāju.
+1. cd4 dc5 2. bc3 ed6 3. cb4.
+I. 3. ... ba5 4. d:b6 a:c3.
+Sitienu 4. ... aic5 parasti nepielieto, jo pēc 5. cb2 a:c3 6. b:b6 c:a5 7. ab2 + = , balto priekšrocības neapstrīdamas.
+5. d:b4 a:c5.
+5. ... c:c3 — pirmais variants.
+6. ab2.
+6. ba5 — otrais variants, 6. ef4. — trešais variants.
+6. ...hg5.
+6 ... fe5 — ceturtais variants.
+7. bc3 — piektais variants un 7. cd2 — sestais variants.
+II. 3. ... fg5 — septītais variants.
+III. 3 ... hg5 4. ba5 gh4 5. dc3.
+5. ab2 — astotais variants.
+5. ... de7 — devītais variants, 5. ... fe7 — desmitais variants,
+5. ... fg5 — vienpadsmitais variants un 5. ... gh6 — divpadsmitais variants.
+«Dambretes» № 6 1984
+Atklātņu teorija
+Vecā partija ar 3. ab2? 3. cb2
+Старая партия c 3. ab2? 3. cb2
+«Dambretes» № 6 - 12 1984 № 1 1985
+Atklātņu teorija
+Vecā partija ar 3. gf4
+Старая партия c 3. gf4
+(Nobeigums. Sākumu sk. «Dambrete» 1984. gada 6.—12., 1. 1985 numurā.)
+Lai lasītājiem būtu vieglāk Orienfēties atklātņu sistēmu «džungļos», parasti variantu izkiāstu sākam ar satura rādītāju.
+Ko šīs tradīcijas neatkāpsimies arī šoreiz.
+1. cd4 dc5 2. bc3 ed6 3. gf4.
+3. ... fg5 (3. ... fe7 4. cb2—
+pirmais variants, 3. ... fe7
+4. hg3 — otrais variants).
+I. 4. cb2 gf6 (4. ... gh4 — trešais variants)
+5. cb4 (5. fg3 gh4 6. gf2 de7 — ceturtais variants,
+6. ... fe7 — piektais variants), un tālāk
+5 ... de5 — sestais variants,
+5 ... gh4 — septītais va¬riants, 5 ... hg7 — astotais variants, 5 ... ba5 — devītais variants.
+II. 4. fg3 gh4 (4 ... ba5 — desmitais variants) 5. gf2 (5. ab2 — vienpadsmitais vadīts)
+5 ... fe7 (5 ... ba5— divpadsmitais variants) un
+6. ab2 — trīspadsmitais variants, 6. cb4 — četrpadsmitais variants, 6. cb2 — piecpadsmitais variants.
+«Dambretes» № 2 - 6 1985
+Atklātņu teorija
+Vecā partija ar 3. gh4
+Старая партия c 3. gh4
+(Nobeigums. Sakumu sk. «Dambretes» 1985. gada 2., 3., 4., 5., 6. numurā.)
+Aplūkosim variantus, kas veidojas pēc 1. cd4 dc5 2. bc3 ed6 3. gh4.
+3 ... fe7 4. fg3.
+Nedrīkst 4. ab2?, )O seko trieciens 4 ... cb4! 5. a:c5 d:b4 6. cia5 fg5 7. h:f6 g:a1 X.
+4. hg3 de5 5. gf4 e:g3 6. cb4 ed6 (6 ... cd6? 7. de5 f:d4 8. hg5 h:f4 9. f:h4 d:f2 10. e:a5 X)
+7. ba5 hg5 8. ab2 gh2 9. bc3 gh6 10. cb4 fe5 11. d:f6 g:e7 12. ef4ef6 13. fe3 hg7
+(13 ... de5? 14. b:d6 e:g3 15. h:f2 c:e5 16. a:c7 d:b6 17. fg3 h:f4 18. e:e7 gf6 19. e:g5 h:f4 20. ef2 X)
+14. ef2 fe5 15. fg5 h:f4 16. e:g5 gf6 17. g:e7 d:f6 18. de3 ed4 19. fg3 h:d2 20. c:e3 d:f2
+21. g:e3 de5 22. b:f4 fe5 23. f:d6 c:e5 24. a:c7 b:d6 =.
+4 ... fg5.
+Nomaiņa 4 ... ba5 5. d:b6 a:c5 ar turpmāko 6. cb4 tiks analizēta pirmajā variantā.
+6. ef4 — otrais variants, 6. gf4 — trešais variants, 6. gf2 — ceturtais variants.
+5. h:f6 e:g5 6. ab2.
+6. gf4 gf6 — piektais variants, 6. gf4 gh4? — sestais variants,
+6. gh4 — septītais variants.
+6 ... ba5.
+6 ... gf6 — astotais variants, 6 ... gh4 — devītais variants.
+7. d:b6 a:c5 — desmitais variants.
+«Dambretes» № 6 1985
+Atklātņu teorija
+Apgrieztais krustojums
+Обратный перекресток
+5o atklātni spēle samēra reti, tādēļ tā nav sīki izpētīta, te iespējams ne viens vien pārsteigums.
+1. cd4 deS 2. bc3 ed6 3. gh4.
+I. 3 ... dc5.
+Tāda pati pozīcija izveidojās arī no «Vecās partijas»:
+1. cd4 dc5 2. bc3 ed6 3. gh4 de5.
+4. fg3.
+Pēc 4. ab2? baltie kapitulē uzreiz: 4 ... cb4 5. a:c5 ef4 6. e:e7 f:b4 7. c:a5 hg5 8. h:f6 g:a1 X.
+Ievērojamas grūtības baltajiem rodas pēc 4. hg3 fe7 5. gf4 (5. gh2? cd6 6. ab2 bc7 7. gf4 e:g3 8. h:f4 fe5 9. d:f6 g:g3 10. hg5 h:f4
+11. f:h4 ba5 12. e:g5 cd4 13. c:e5 d:h6 X) 5... e:g3 6. cb4 ed6 (6...cd6? 7. de5 f:d4 8. hg5 h:f4 9. f:h4 d-f2 10. e:a5 X)
+7. ba5 gh2 8. dc3 (8. ab4 c:a3 9. fg3 h:f4 10. e:c5 hg5 X) 8 ... de5 - + .
+4 ... cd6.
+Tālāk aplūkosim 5. gf4 — pirmais variants un 5. ab2 — otrais variants.
+II. Gājiena 3... hg5 sekas tiks apskatītas trešajā variantā.
+Вот рассматриваемые варианты ходов указаны в Дамбрете 6-12 за 1983 год.
+Безымянные Начала - Система I-VIII
+1.c3-b4 d6-e5 2.b4-a5 b6-c5 3.e3-f4 e7-d6 4.f2-e3 e5-d4
+1.c3-b4 d6-e5 2.b4-a5 b6-c5 3.e3-d4 c5:e3 4.d2:d6 e7:c5
+1.c3-b4 d6-e5 2.b4-a5 b6-c5 3.e3-f4 e7-d6 4.b2-c3 c5-d4
+1.c3-b4 d6-e5 2.b4-a5 b6-c5 3.e3-f4 e7-d6 4.b2-c3 f6-g5 5.c3-b4 g5:e3 6.d2:f4 d8-e7!
+1.c3-b4 d6-e5 2.b4-a5 b6-c5 3.e3-f4 e7-d6 4.b2-c3 f6-g5 5.c3-b4 g5:e3 6.f2:f6 g7:e5 7.g3-h4 d8-e7
+1.c3-b4 d6-e5 2.b4-a5 b6-c5 3.e3-f4 e7-d6 4.b2-c3 f6-g5 5.c3-b4 g5:e3 6.f2:f6 g7:e5 7.g3-h4 f8-g7
+1.c3-b4 d6-e5 2.b4-a5 b6-c5 3.e3-f4 e7-d6 4.b2-c3 f6-g5 5.c3-b4 g5:e3 6.f2:f6 g7:e5 7.g3-h4 h8-g7
+1.c3-b4 d6-e5 2.b4-a5 b6-c5 3.e3-f4 e7-d6 4.b2-c3 f6-g5 5.g3-h4 e5:g3 6.h4:f6 g7:e5 7.f2:h4
+Nodaļu vada PSRS sporta meistari
+V.ADAMOVIČS un A.SUBOTINS
+«Dambretes» № 10 - 12 1979 № 1 - 5 1980
+Atklātņu teorija
+Apgrieztais rāmis ar 4.ab2
+Обратный косяк c 4. ab2
+(Nobeigums. Sākumu sk. «Dambretes» 1979. g. 10., 11., 12., 1980. g. 1., 2., 3., 4., 5. num.)
+Divdesmit sestais variats
+1. cb4 fg5 2. gf4 gf6 3. bc3 fe5 4. ab2 
+«Dambretes» № 6 - 7 1980
+Atklātņu teorija
+Apgrieztais rāmis ar 2. ef6
+Обратный косяк  c 2. ef6
+(Nobeigums. Sākumu sk. «Dambretes» 1980. gada 6., 7. numurā. )
+Kā vienmēr, vispirms īss satura rādītājs, lai mūsu lasītāji varētu vieglāk
+orientēties turpmāk aplūkotajos variantos.
+1. cb4 fg5 2. gf4 ef6 3. bc3.
+Te iespējama arī citāda gājienu secība: 3. ba5 fe5 4. bc3 e:g3 5. h:f4.
+3. ...fe5.
+4. ba5 ( 4. ab2 e:g3 5. h:f4 — pirmais variants ) 4 ... e:g3 5. h:f4 gf6 6. ed4
+( 6. ab2 — otrais variants; 6. cb4 bc5 — trešais variants; 6. cb4 de7 — ceturtais variants )
+6 ... hg7 7. dc3 ( 7. cb2 — piektais variants) 7 ... gh4 ( 7. ... dc5 — sestais variants; 7 ... de5 — septītais variants )
+8. ab2 de5 ( 8. ... fg5 — astotais variants ) 9. f:d6 e:e5 — devītais variants.
+«Dambretes» № 8 - 9 1980
+Atklātņu teorija
+Apgrieztais rāmis ar 4. ba5
+Обратный косяк c 4. ba5
+(Nobeigums. Sākumu sk. «Dambretes» 1980. gada 8., 9. numurā. )
+1. cb4 fg5 2. gf4 gf6 3. bc3 fe5 4. ba5 e:g3 5. h:f4 hg7 6. cd4 gf6.
+Tālāk aplūkosim sekojošus variantus:
+7. dc3 ( 7. dc5 — pirmais variants ) 7.. . de5 ( 7 ... gh4 8. ab2 fe5 9. d:f6 e:g5
+10. cd4 de5 — otrais variants un 10 ... fg7 — trešais variants;
+7 ... bc5 8. d:b6 a:c5 — ceturtais variants ) 8. f:d6 c:e5
+9. a:c7 b:d6 ( 9 ... d:b6 — piektais variants ) 10. ab4 — sestais variants.
+«Dambretes» № 10 - 12 1980
+Atklātņu teorija
+Sargina rāmis
+Косяк Саргина
+(Nobeigums. Sākumu sk. «Dambretes» 1980. gada 10., 11., 12. numurā. )
+Aplūkojams atklātne izveidojas pēc šādiem sākuma gājieniem:
+1. cb4 bc5 2. bc3 fg5 3. cd4 gf6 4. d:b6 a:c5.
+I. 5. de3 hg7! 6. gf4 gh4 7. ab2 fe5 — pirmais variants,
+7. ... fg5 — otrais variants.
+II. 5. dc3 gh4 6. cd4 cb6 — trešais variants, 6. ... hg5? — cefurtais variants,
+6 ... fg5 — piektais variants, 6 ... hg7 — sestais variants.
+III. 5. dc3 gh4 6. gf4 fg5 ( 6 ... fe5 — septītais variants ) 7. ab2 — astotais variants,
+7. cb2 — devītais variants, 7. cd2 — desmitais variants.
+IV. 5. ab2 gh4 ( 5 ... fe5 — vienpadsmitais variants ) 6. bc3 cb6 — divpadsmi¬tais variants,
+6 ... fe5 — trīspadsmitais variants, 6 ... fg5 — četrpadsmitais variants.
+«Dambretes» № 1 - 2 1981
+Atklātņu teorija
+Atteiktais rāmis
+(Nobeigums. Sākumu sk. «Dambretes» 1981. gada 1., 2. numurā. )
+Отказанный косяк
+Pēc tradīcijas pirms variantu sīkāka izklāsta sniedzam satura rādītāju,
+kas palīdzēs orientēties apskatāmās atklātnes shēmās.
+I. 1. cb4 fg5 2. gf4 dc5 (2 ... gf6 3. bc3 dc5 4. b:d6 e:c5 — pirmais variants)
+3. b:d6 e:c5 4. bc3 cd6 5. cb4 ( 5. fg3 — otrais variants ) 5 ... ba5 — trešais variants.
+II.1. cb4 fg5 2. gt4 gf6 3. bc3 de5 4. f:d6 c:e5.
+5. ba5 ( 5. ef4 — ceturtai \s variants;
+5. ed4 gh4 6. ba5 — piektais variants un 6. de3 — sestais variants) 5 ... gf4 6. e:g5 h:f4 7. a:c7 d:b6
+(7 ... b:d6 — septītais variants) 8. ab4 ( 8. cb4 — astotais variants ) 8. ... hg7 — devītais variants.
+«Dambretes» № 3 - 6 1981
+Atklātņu teorija
+Apgrieztā vecā partija
+Обратная старая партия
+(Nobeigums. Sākumu sk. «Dambretes» 1981. gada 3., 4., 5., б. numurā. )
+Kā vienmēr vispirms ievietojam īsu satura rādītāju, lai lasītājiem būtu vieglāk orientēties variantu «biezoknī»
+1. cb4 fe5 2. ef4 gf6 3. de3.
+I. 3 ... ba5 4. bc5 ( 4 cd2 — pirmais variants,
+4. bc3 — otrais variants ) 4 ... d:b4 5. a:c5 ed4 6. cd6 e:c5 7. fe5 cd6
+(7. ... fg5 — trešais variants)  8. e:c3 — ceturtais variants.
+II. 3 ... hg7! 4. ba5 bc5 5. cd2 cb6 (5 ... ab6 — piektais variants) 6. a:c7 d:b6 — sestais variants
+III. 3 ... bc5 4. bc3 fg7 (4 ... fg5? — septītais variants,
+4 ... ab6 — astotais variants, 4 ... cb6 5. a:c7 d:b6 — devītais variants, 4. hg7? — desmitais variants)
+5. ba5 ( 5. ed2 — vienpadsmitais variants) 5. fg5 — divpadsmitais va¬riants.
+IV. 3. ... fg5 — trīspadsmitais variants.
+«Dambretes» № 6 1981
+Atklātņu teorija
+Apgrieztā pilsētas atklātne ar 3. ...bc5
+Обратная городская партия c 3. ... bc5
+Pēc sākuma gājieniem 1. cb4 fe5 2. ef4 gf6 3. ba5 bc5 4.
+bc3 izveidojas apskatāmās sis¬tēmas pamatpoztcija.
+Te melnie var izvēlēties vienu no sešiem variantiem: 4 ... cd4 — pirmais variants,
+4 ... fg7? — otrais variants, 4 ... hg7? — trešais variants, 4 ... fg5 — ceturtais variants,
+4 ... cb4 5. a:c5 d:b4 6. f:d6 c:e5 — piektais variants un 4 ... cb6? 5. a:c7 d:b6 — sestais variants.
+«Dambretes» № 7-9 1981
+Atklātņu teorija
+Apgrieztā pilsētas atklātne ar 5. ...bc5
+Обратная городская партия c 5. ... bc5
+(Turpinājums. Sākumu sk. «Dambretes» 1981. gada 7., 8., 9. numurā.)
+Apskatāmo variantu satura rādītājs:
+1. cb4 fe5 2. ef4 gf6 3. ba5 fg5 4. bc3 g:e3 5. d:f4 bc5 6. cb4
+(6. ed2 — pirmais variants)
+6 ... ef6 (6 ... hg7 — otrais variants)
+7. ab2. 7 ... fg7 (ja 7. ... ab6, tad 8. fe3 — trešais variants, 7 ... cb6 8. a:c7 d:b6 — ceturtais variants,
+7 ... hg7 — piektais variants) 8. fe3 ( 8. bc3 — sestais variants) 8. ... fg5 ( 8 ... ed4 — septī¬tais variants)
+9. gh4 e:g3 10. h:f2 gf4 (10 ... gf6 — astotais variants ) 11. e:g3 h:f4 — devītais variants.
+«Dambretes» № 10-11 1981
+Atklātņu teorija
+Apgrieztā pilsētas atklātne ar 5. ...ef6
+Обратная городская партия c 5. ... ef6
+(Turpinājums. Sākumu sk. «Dambretes» 1981. gada 10., 11. numurā.)
+Sīs atklātnes pamatpozīcija veidojas pēc sākuma gājieniem
+1. cb4 fe5 2. ef4 gf6 3. ba5 fg5 4. bc3 g:e3 5. d:f4 ef6.
+Tālāk iespējamos gājienus apskatīsim katru sava varianta ietvaros.
+6. ab2 — pirmais variants, 6. cb4 — otrais variants, 6. ed2 — trešais variants,
+6. fe3 — ceturtais variants, 6. gh4 — piektais variants.
+«Dambretes» № 12 1981
+Atklātņu teorija
+Apgrieztā pilsētas atklātne ar 5. ... hg7
+Обратная городская партия c 5 ... hg7
+1. cb4 fe5 2. ef4 gf6 3. ba5 fg5 4. bc3 g:e3 5. d:f4 hg7.
+«Dambretes» № 12 1981
+Atklātņu teorija
+Nomaiņas sistēma Apgrieztajā pilsētas atklātnē
+Разменная обратная городская партия
+1. cb4 fe5 2. ef4 gf6 3. ba5 fg5 4. gh4 e:g3.
+Pēc 4 ... g:e3 baltie ar 5. f:f6 e:g5 6. h:f6 iegūst plānoto pozīciju.
+5. h:f6 e:g5 6. f:f6.
+«Dambretes» № 1 1982
+Atklātņu teorija
+Atraidīta apgrieztā pilsētas atklātne ar 3. de3
+Отказанная обратная городская партия c 3. de3
+Tā kā šo gājienu spēlē ļoti reti, tad apskatīsim tikai trīs variantus.
+1. cb4 fe5 2. ef4 ba5 3. de3 a:e3 4. b:f6 g:e5.
+«Dambretes» № 2 - 8 1982
+Atklātņu teorija
+Atraidītā apgriezta pilsētas atklātne ar 3. fe3
+Отказанная обратная городская партия c 3. fe3
+(Turpinājums. Sākumu sk. «Dambretes» 1982. gada 2., 3., 4., 5., 6., 7. un 8. numurā)
+Šoreiz aplūkosim variantus, kas izveidojas pēc gājieniem 1. cb4 fe5 2. ef4 ba5 3. fe3 a:c3 4. b:f6.
+I. 4 ... g:e5 5. ab4 (5. ab2 —pirmais variants) 5. ab6 — otrais variants,
+5. ... hg7 — trešais variants un 5 ... ef6 — ceturtais variants.
+II. 4 ... e:g5 5. ab4 [ 5. ab2 gh4 6. gf2 ab6 (6 ... dc5 — piektais variants)
+7. bc3 — sestais variants un 7. ab4 — septītais variants ]
+5. gh4 (5. ... cb6 — astotais variants) 6. ef2 (6. gf2 de7 — devītais variants,
+6. gf2 ab6 — desmitais variants) 6 ... de7 — vienpadsmitais variants un 6 ... cb6 — divpadsmitais variants.
+«Dambretes» № 9 - 12 1982
+Atklātņu teorija
+Atteikta apgrieztā pilsētas atklātne ar 3. bc3
+Отказанная обратная городская партия c 3. bc3
+(Nobeigums. Sākumu sk. «Dambretes» 1982. gada 9., 10. un 11. numurā. )
+Zemāk apskatītajiem variantiem ir patstāvīga nozīme, jo pazīstamajos
+Bodjanska spēles turpinājumos šīs pozīcijas izveidojas tikai pēc objektīvi sliktiem gājieniem un tādēļ netiek analizētas.
+Kā vienmēr, vispirms īss satura rādītājs
+1. cb4 fe5 2. ef4 ba5 3. bc3.
+3 ... ab6 (3. . . ef6 — pirmais variants, 3. . . cb6 4. fe3 gf6 — otrais variants un
+4. ... bc5 — trešais variants) 4. fe3 gf6 (4. ... bc5 — ceturtais variants, 4 .... gf6 — piektais variants)
+5. gh4 ( 5. ed4 — sestais variants) 5 ... e:g3 6. h:f2 bc5 — septītais variants,
+6 ... fe5 — astotais variants, 6 ... hg5 — devītais variants
+«Dambretes» № 12 1982 № 1 - 3 1983
+Atklātņu teorija
+Apgrieztā pilsētas atklātnear 5. fe3 «Aklā partija»
+Обратная городская партия c 5. fe3 («Слепая партия»)
+(Turpinājums. Sākumu sk. «Dambretes» 1982. gada 12. num. un 1983. gada 1., 2 ., 3 numurā. )
+Aplūkosim sekojošo atklātnes sistēmu:
+1. cb4 de5. Analizēja¬mie varianti rodas arī pēc
+1 ... fe5 2. ef4 ef6 3. ba5 bc5 4. bc3 fg5 5. fe3 utt.
+2. ba5 bc5 3. ef4. Nedrīkst 3. dc3? cb4 4. a:c5 cb6 5. a:c7 b:f4 X un
+3. bc3? cd4l 4. e:c5 ef4 5. g:e5 f:b2 6. a:c3 cb6 7. a:c7 d:b2 X-
+3 ... ed6 4. bc3 fg5 5. fe3 gh4 6. gf2.
+I. 6 ... cb6 7. a:c7 d:b6 —pirmais variants.
+II. 6 ... ab6 7. cb4 (7. ab2? — otrais variants, 7. cb2? — trešais variants,
+7. cd4 — ceturtais variants) un tālāk 7 ... gf6 — piektais variants, 7 ... ba7 — sestais
+variants, 7 ... de7 — septītais variants.
+III. 6 ... fe7 — astotais variants.
+IV. 6 ... de7 — devītais veriants.
+V. 6 ... gf6 — desmitais variants.
+«Dambretes» № 3 - 5 1983
+Atklātņu teorija
+Apgrieztā atspēle (Apgrieztā pilsētas atklātne ar 4. fe3)
+Обратный отыгрыш 4. fe3
+(Nobeigums. Sākumu sk. «Dambretes» 1983. gada 3., 4., 5 numurā )
+Šoreiz dalīsim apskatāmo atklātnes shēmu sešos variantos
+1. cb4 de5 2. ba5 bc5 3. ef4 ed6 4. fe3 fg5 5. gh4 e:g3 6. h:f2 gf4 7. e:g5 h:f4.
+8. bc3 gf6 9. cb4 hg7.
+I. 10. ab2 un 10 ... fe5 —
+pirmais variants, bet 10 ... gh6 — otrais variants.
+II. 10. dc3 fe5 11. cd4 e:c3 12. b:d2 un 12 ... de7 — trešais variants, bet 12 ... gf6 ceturtais variants.
+III. 10. de3 f:d2 11. c:e3 — piektais variants
+IV. 10. fg3 — sestais variants
+1. Apgriezta akla partija — Обратная слепая партия
+2. «Klla» sistema — Система «Кола»
+3. Atraidita «klla» sistema — Отказанная система «Кола»
+
+
+== Примечания ==
