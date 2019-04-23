@@ -1,8 +1,8 @@
 import json
 from os import walk
 
-def get_tokens_name():
-    mypath = '../data-tokens/'
+
+def get_tokens_name(mypath='../data_url_tokens/'):
     f = []
     for (dirpath, dirnames, filenames) in walk(mypath):
         f.extend(filenames)
@@ -10,6 +10,7 @@ def get_tokens_name():
     files_name = ["../data-tokens/" + x for x in f]
 
     return files_name
+
 
 if __name__ == "__main__":
     tokens = get_tokens_name()

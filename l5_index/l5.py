@@ -6,6 +6,11 @@ from datetime import datetime
 from collections import defaultdict
 import hashlib
 
+import sys
+sys.path.append('..')
+
+from l2.get_statictic import get_tokens_name
+
 FORMAT_TO_LL = 'q'
 FORMAT_TO_CHAR = 's'
 SIZE_OF_LL = 8
@@ -14,12 +19,12 @@ URL_PREFFIX = 'https://ru.wikipedia.org/wiki/'
 
 
 def timer(func):
-    def wraper(*args, **kwargs):
+    def wrapper(*args, **kwargs):
         t1 = datetime.now()
         res = func(*args, **kwargs)
         print("%s works %s" % (func.__name__, datetime.now() - t1))
         return res
-    return wraper
+    return wrapper
 
 
 def get_articles_name(dn):
@@ -70,6 +75,7 @@ def read_index_title_and_url(id, file_name):
 def get_articles(set_of_ids, file_name='doc_id'):
     for id in set_of_ids:
         print("Заголовок: %s. Url: %s" % read_index_title_and_url(id, file_name))
+    print('Articles count: %s' % len(set_of_ids))
 
 
 def write_n_digits_to_binary_doc_id(list_of_digits, file_name):
@@ -81,6 +87,13 @@ def write_n_digits_to_binary_doc_id(list_of_digits, file_name):
 
 
 def read_form_binary_doc_id(offset, file_name, pos_in_file=0):
+    """
+    Считывает offset чисел с pos_in_file
+    :param offset:
+    :param file_name:
+    :param pos_in_file:
+    :return:
+    """
     with open(file_name, 'rb') as f:
         f.seek(pos_in_file * SIZE_OF_LL)
         values = f.read(offset*SIZE_OF_LL)
@@ -89,7 +102,7 @@ def read_form_binary_doc_id(offset, file_name, pos_in_file=0):
 
 
 @timer
-def create_doc_id_files():
+def create_doc_id_files(file_name='doc_id'):
     doc_id = dict()
     index = 0
     for article in get_articles_name(dn='data_url'):
@@ -100,7 +113,7 @@ def create_doc_id_files():
             doc_id[title] = index
             index += 1
     expect_size = 0
-    with open('doc_id', 'ab') as f:
+    with open(file_name, 'ab') as f:
         for title, id in doc_id.items():
             # frm = id + len(title) + len(title) sizeof(char)
             title = title.encode('utf-8')
