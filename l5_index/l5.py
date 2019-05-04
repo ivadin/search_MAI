@@ -73,8 +73,9 @@ def read_index_title_and_url(id, file_name):
 
 
 def get_articles(set_of_ids, file_name='doc_id'):
-    for id in set_of_ids:
-        print("Заголовок: %s. Url: %s" % read_index_title_and_url(id, file_name))
+    for doc_id in set_of_ids:
+        print("Id: %s." % doc_id, end='')
+        print("Заголовок: %s. Url: %s" % read_index_title_and_url(doc_id, file_name))
     print('Articles count: %s' % len(set_of_ids))
 
 

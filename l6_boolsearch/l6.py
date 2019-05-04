@@ -4,7 +4,7 @@ sys.path.append('..')
 
 from l5_index.l5 import load_obj, hash_str, read_form_binary_doc_id, get_articles, timer  # noqa
 
-WORD = re.compile(r'\w+')
+WORD = re.compile(r'\b\w+\b')
 
 
 def parse_request(string):
