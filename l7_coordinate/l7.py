@@ -80,14 +80,11 @@ def create_temp_dict(res_dict, current_dict, step=3):
     :param res_dict: словарь, полученный на предыдущих этапах обработки цитаты
     :param current_dict: словарь, полученный для текущего слова из цитаты
     :param step: определяет допустимые вкрапления в цитатный поиск
-    :return: dict: {doc_id: [pos_in_doc1, pos_in_doc2, pos_in_doc3, ...]}
+    :return: dict: {doc_id: [pos1, pos2, pos3, ...]}
     """
     current_answer_dict = dict()
     for key, list_value in current_dict.items():
         # Ищем общий ключ в том, что уже есть и новос dict-е
-        # if key == 1022:
-        #     import pdb
-        #     pdb.set_trace()
         if key in res_dict:
             list_from_res = res_dict[key]
             list_from_current = current_dict[key]
@@ -129,12 +126,11 @@ def get_search_res_for_quotes(request):
             element.append(res_of_read[i])
 
         if is_first:
-            print("First")
             res_dict = dict_for_cur_word
             is_first = False
         else:
-            print("Next")
             res_dict = create_temp_dict(res_dict, dict_for_cur_word)
+
     get_articles(set(res_dict))
 
 
@@ -143,7 +139,7 @@ if __name__ == '__main__':
     INDEX.plk - инвертированный индекс
     doc_id - файл с id документа и title
     offset_block - позиции слова в документе
-    bin_file - id, offset_in_offset_block_file, elements_in_offset_block
+    bin_file - doc_id, offset_in_offset_block_file, elements_in_offset_block
     """
     # DOC_ID = create_doc_id_files()
     # INDEX = create_raw_invert_index(DOC_ID)
@@ -152,11 +148,12 @@ if __name__ == '__main__':
     INDEX = load_obj('INDEX')
     # while True:
     #     # request = input("Запрос: ")
-    # request = 'мастер спорта по самбо'
+    # request = 'мастер'
+    # request = 'мастер спорта'
     request = 'мастер по самбо'
-
+    request = 'лёгкой спорта тренер'
     #     if request == "exit()":
     #         break
 
     get_search_res_for_quotes(request=request)
-    # print("\n")
+    print("\n")
