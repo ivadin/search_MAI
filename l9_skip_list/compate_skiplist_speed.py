@@ -1,3 +1,4 @@
+import math
 import random
 from functools import reduce
 from datetime import datetime
@@ -47,13 +48,85 @@ def work(first_list_docid, second_list_docid):
     return res
 
 
+def gen_skip_list(input_list):
+    n = len(input_list)
+    step = int(n/int(math.sqrt(n)))
+    return input_list[::step]
+
+
+def get_ans_with_skip_list(first_list, second_list):
+    skip_index1 = 0
+    skip_index2 = 0
+
+    # скип-листы
+    skip1 = gen_skip_list(first_list)
+    skip2 = gen_skip_list(second_list)
+
+    # step_for_first_list - переменная показывает, на сколько нужно нужно переместить итератор в списке, если
+    # произошел ОДИН прыжок по индексу
+    n1 = len(first_list)
+    step_for_first_list1 = int(n1/int(math.sqrt(n1)))
+    n2 = len(second_list)
+    step_for_first_list2 = int(n1/int(math.sqrt(n2)))
+
+    first = 0
+    second = 0
+    answer = list()
+    while True:
+
+        if first >= len(first_list) or second >= len(second_list):
+            return answer
+
+        first_elem = first_list[first]
+        second_elem = second_list[second]
+        step = 1
+
+        if first_elem == second_elem:
+            answer.append(first_elem)
+
+            first += 1
+            second += 1
+
+            if skip_index1 < len(skip1) and first_elem == skip1[skip_index1]:
+                skip_index1 += 1
+            if skip_index2 < len(skip2) and second_elem == skip2[skip_index2]:
+                skip_index2 += 1
+
+        elif first_elem < second_elem:
+
+            if skip_index1 < len(skip1) and skip1[skip_index1] == first_elem:
+                if skip_index1 + step < len(skip1) and skip1[skip_index1 + step] < second_elem:
+                    # пытаемтся двигаться в скип-листе
+                    while skip1[skip_index1 + step] < second_elem:
+                        step += 1
+                    first += step * step_for_first_list1
+                first += step
+                skip_index1 += step
+            else:
+                first += step
+        else:
+
+            if skip_index2 < len(skip2) and skip2[skip_index2] == second_elem:
+                if skip_index2 + step < len(skip2) and skip2[skip_index2 + step] < first_elem:
+                    # пытаемтся двигаться в скип-листе
+                    while skip2[skip_index2 + step] < first_elem:
+                        step += 1
+                    second += step * step_for_first_list2
+                second += step
+                skip_index2 += step
+            else:
+                second += step
+
+    # return answer
+
+
 if __name__ == '__main__':
-    list_count = 5
+    list_count = 2
     res_for_search = [sorted(set(gen_list(MAX_VALUE))) for _ in range(list_count)]
 
     t1 = datetime.now()
     print(len(reduce(lambda a, x: work(a, x), res_for_search)))
-    print(f"Simple compare: {datetime.now() - t1}")
+    print(f"Work compare: {datetime.now() - t1}")
 
     t1 = datetime.now()
     print(len(reduce(lambda a, x: get_simple_compare(a, x), res_for_search)))
@@ -61,4 +134,8 @@ if __name__ == '__main__':
 
     t1 = datetime.now()
     print(len(reduce(lambda a, x: get_set_compare(a, x), res_for_search)))
-    print(f"Simple compare: {datetime.now() - t1}")
+    print(f"Python sets compare: {datetime.now() - t1}")
+
+    t1 = datetime.now()
+    print(len(reduce(lambda a, x: get_ans_with_skip_list(a, x), res_for_search)))
+    print(f"Skip list compare: {datetime.now() - t1}")
