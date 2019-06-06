@@ -151,7 +151,7 @@ if __name__ == '__main__':
     # request = 'мастер'
     # request = 'мастер спорта'
     request = 'мастер по самбо'
-    request = 'лёгкой спорта тренер'
+    # request = 'лёгкой спорта тренер'
     #     if request == "exit()":
     #         break
 

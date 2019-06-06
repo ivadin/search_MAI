@@ -6,7 +6,7 @@ import vbcode  # noqa
 
 sys.path.append('..')
 
-from l5_index.l5 import (load_obj, get_articles, timer, get_articles_name, hash_str)
+from l5_index.l5 import (load_obj, get_articles, timer, get_articles_name, hash_str, create_doc_id_files, save_obj)
 from l7_coordinate.l7 import get_words_for_quotes
 
 
@@ -163,6 +163,16 @@ def get_search_res_for_quotes(request):
     get_articles(set(res_dict))
 
 
+def write_data():
+    """
+    Добавить при первом запуске, что бы создались данные
+    :return:
+    """
+    DOC_ID = create_doc_id_files()
+    INDEX = create_raw_invert_index(DOC_ID)
+    save_obj(INDEX, name='INDEX')
+
+
 if __name__ == '__main__':
     """
     INDEX.plk - инвертированный индекс
@@ -171,10 +181,6 @@ if __name__ == '__main__':
     vb(doc_id1, doc_id2, ...)(freq_in_doc_id1, freq_in_doc_id2, ...)
             ([pos1_in_doc1, pos2_in_doc1, ...][pos1_in_doc2, pos2_in_doc2, ...] ...)
     """
-    # DOC_ID = create_doc_id_files()
-    # INDEX = create_raw_invert_index(DOC_ID)
-    # save_obj(INDEX, name='INDEX')
-
     INDEX = load_obj('INDEX')
     # request = 'мастер'
     # request = 'мастер спорта'
