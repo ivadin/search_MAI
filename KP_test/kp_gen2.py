@@ -6,13 +6,13 @@ import typing
 import datetime
 import hashlib
 import vbcode
+import math
 from pymystem3 import Mystem
 from collections import defaultdict
 
 sys.path.append('..')
 
-from l5_index.l5 import (FORMAT_TO_LL, SIZE_OF_LL, FORMAT_TO_CHAR, SIZE_OF_CHAR, URL_PREFFIX,
-                         read_form_binary_doc_id, timer, get_articles_name)
+from l5_index.l5 import (FORMAT_TO_LL, SIZE_OF_LL, FORMAT_TO_CHAR, SIZE_OF_CHAR, URL_PREFFIX, timer, get_articles_name)
 from l6_boolsearch.l6 import get_words
 from l7_coordinate.l7 import get_words_for_quotes
 
@@ -32,28 +32,91 @@ morph = Mystem()
 FORMAT_TO_UI = 'I'
 SIZE_OF_UI = 4
 
+FORMAT_TO_FL = 'f'
+SIZE_OF_FL = 4
+
 DIR_WITH_ARTICLES = 'data_url'
 DIR_WITH_TOKENS = 'data_url_tokens'
 
 TOTAL_ARTICLE_COUNT: int = 0
 
 
+class LogicDict(dict):
+    """
+    Словарь, который поддерживает логические операции, суммируя value.
+    Нужен для построения метрики TFIDF для запросов
+    """
+    def __and__(self, other):
+        answer = LogicDict()
+        for key, value in other.items():
+            if key in self:
+                self_value = self[key]
+                if isinstance(self_value, (list, tuple)):
+                    if len(self_value) == 2:
+                        self_value = self_value[0]  # если структура doc_id: [tfidf, [pos1, pos2, pos3, ....]]
+                    else:
+                        self_value = sum(self_value)  # если структура doc_id: [tfidf, tfidf, ...]
+                if isinstance(value, (list, tuple)):
+                    if len(value) == 2:
+                        value = value[0]  # если структура doc_id: [tfidf, [pos1, pos2, pos3, ....]]
+                    else:
+                        value = sum(value)  # если структура doc_id: [tfidf, tfidf, ...]
+
+                answer[key] = self_value + value
+
+        return answer
+
+    def __or__(self, other):
+        answer = LogicDict()
+        for key, value in self.items():
+            if isinstance(value, list):
+                if len(value) == 2:
+                    value = value[0]  # если структура doc_id: [tfidf, [pos1, pos2, pos3, ....]]
+                else:
+                    value = sum(value)  # если структура doc_id: [tfidf, tfidf, ...]
+            answer[key] = value
+        for key, value in other.items():
+            if key in answer:
+                self_value = self[key]
+                if isinstance(self_value, (list, tuple)):
+                    if len(self_value) == 2:
+                        self_value = self_value[0]  # если структура doc_id: [tfidf, [pos1, pos2, pos3, ....]]
+                    else:
+                        self_value = sum(self_value)  # если структура doc_id: [tfidf, tfidf, ...]
+                if isinstance(value, (list, tuple)):
+                    if len(value) == 2:
+                        value = value[0]  # если структура doc_id: [tfidf, [pos1, pos2, pos3, ....]]
+                    else:
+                        value = sum(value)  # если структура doc_id: [tfidf, tfidf, ...]
+                answer[key] = self_value + value
+            else:
+                if isinstance(value, list):
+                    if len(value) == 2:
+                        value = value[0]  # если структура doc_id: [tfidf, [pos1, pos2, pos3, ....]]
+                    else:
+                        value = sum(value)  # если структура doc_id: [tfidf, tfidf, ...]
+                answer[key] = value
+        return answer
+
+    def __str__(self):
+        return f"{self.__class__.__name__}({super().__str__()})"
+
+
 def create_temp_dict(res_dict, current_dict, step=3):
     """
-    Получить dict {doc_id: [pos_in_doc1, pos_in_doc2, pos_in_doc3, ...]}
+    Получить dict {doc_id: (tfidf, [pos_in_doc1, pos_in_doc2, pos_in_doc3, ...])}
     :param res_dict: словарь, полученный на предыдущих этапах обработки цитаты
     :param current_dict: словарь, полученный для текущего слова из цитаты
     :param step: определяет допустимые вкрапления в цитатный поиск
     :return: dict: {doc_id: [pos1, pos2, pos3, ...]}
     """
-    current_answer_dict = dict()
+    current_answer_dict = LogicDict()
     for key, list_value in current_dict.items():
         # Ищем общий ключ в том, что уже есть и новос dict-е
         if key in res_dict:
-            list_from_res = res_dict[key]
-            list_from_current = current_dict[key]
-            # import pdb
-            # pdb.set_trace()
+            tfidf_res, list_from_res = res_dict[key]
+            tfidf_from_current, list_from_current = current_dict[key]
+
             answer_element_list = list()
             # Важно! Идем по позицияс в res_dict, так как он уже посчитан, и отталкиваемся от этих элеметов
             for pos in list_from_res:
@@ -64,7 +127,8 @@ def create_temp_dict(res_dict, current_dict, step=3):
                         answer_element_list.append(pos + i + 1)
             # Если мы нашли
             if answer_element_list:
-                current_answer_dict[key] = answer_element_list
+                total_ifidf = tfidf_res + tfidf_from_current
+                current_answer_dict[key] = (total_ifidf, answer_element_list)
 
     return current_answer_dict
 
@@ -80,17 +144,21 @@ def read_bin_struct_for_quotes(pos_in_file, offset_for_doc, offset_for_freq, fil
     :param file_name:
     :return:
     """
-    answer = dict()
+    answer = LogicDict()
 
     with open(file_name, 'rb') as f:
         f.seek(pos_in_file)
         vb_doc_ids = f.read(offset_for_doc)
         doc_ids = vbcode.decode(vb_doc_ids)
 
+        bin_tfidf = f.read(len(doc_ids) * SIZE_OF_FL)
+        frm = str(len(doc_ids)) + FORMAT_TO_FL
+        tfidf = struct.unpack(frm, bin_tfidf)
+
         bin_freqs = f.read(len(doc_ids) * SIZE_OF_UI)
         frm = str(len(doc_ids)) + FORMAT_TO_UI
-
         freqs = struct.unpack(frm, bin_freqs)
+
         vb_list_of_positions = f.read(offset_for_freq)
         list_of_positions = vbcode.decode(vb_list_of_positions)
 
@@ -98,7 +166,7 @@ def read_bin_struct_for_quotes(pos_in_file, offset_for_doc, offset_for_freq, fil
     for i in range(len(doc_ids)):
         second_slice = first_slice + freqs[i]
         # берем i-ый doc_id, i-ый freq и берем срез с из массива с частотами
-        answer[doc_ids[i]] = list_of_positions[first_slice:second_slice]
+        answer[doc_ids[i]] = (tfidf[i], list_of_positions[first_slice:second_slice])
         first_slice += freqs[i]
 
     return answer
@@ -111,16 +179,24 @@ def read_bin_struct_for_bool(pos_in_file, offset_for_doc, file_name='bin_file'):
             ([pos1_in_doc1, pos2_in_doc1, ...][pos1_in_doc2, pos2_in_doc2, ...] ...)
     :param pos_in_file: смещение в байтах от начала
     :param offset_for_doc: длина в байтах закодированных doc_ids
-    :param offset_for_freq: длинна в байтах закодированных позиций для каждого документа
     :param file_name:
     :return:
     """
+    answer = LogicDict()
     with open(file_name, 'rb') as f:
         f.seek(pos_in_file)
         vb_doc_ids = f.read(offset_for_doc)
         doc_ids = vbcode.decode(vb_doc_ids)
 
-    return set(doc_ids)
+        bin_tfidf = f.read(len(doc_ids) * SIZE_OF_FL)
+        frm = str(len(doc_ids)) + FORMAT_TO_FL
+        tfidf = struct.unpack(frm, bin_tfidf)
+
+    for i in range(len(doc_ids)):
+        # берем i-ый doc_id, i-ый freq и берем срез с из массива с частотами
+        answer[doc_ids[i]] = tfidf[i]
+
+    return answer
 
 
 @timer
@@ -132,7 +208,7 @@ def get_search_res_for_quotes(request, step):
     :return:
     """
     words = get_words_for_quotes(request)
-    res_dict = dict()
+    res_dict = LogicDict()
     is_first = True
     for word in words:
         hash_word = hash_str(word)
@@ -146,7 +222,14 @@ def get_search_res_for_quotes(request, step):
         else:
             res_dict = create_temp_dict(res_dict, dict_for_cur_word, step)
 
-    return str(set(res_dict))
+    """
+    res_dict имеет слудующую структуру:
+    {
+        doc_id: (tfidf, [pos_in_file, ...]),
+        ...
+    }
+    """
+    return str(res_dict)
 
 
 def hash_str(s):
@@ -292,7 +375,17 @@ def create_direct_index(file_name='doc_id'):
 
 @timer
 def create_raw_invert_index(direct_index):
-    raw_invert_index = defaultdict(lambda: defaultdict(list))
+    raw_invert_index = defaultdict(lambda: defaultdict(lambda: [int, []]))
+    """
+    raw_invert_index:
+    {
+        word: 
+        {
+            doc_id: (кол-во токенов в докумене, [позиции, на которых слово встретиловсь])
+            # частотсу слова в документе, для расчета idf можно получить как len([позиции])
+        }
+    }
+    """
     dir_name = DIR_WITH_TOKENS
 
     step = 0
@@ -305,7 +398,8 @@ def create_raw_invert_index(direct_index):
 
             for i in range(len(tokens_list)):
                 word_hash = hash_str(tokens_list[i])
-                raw_invert_index[word_hash][doc_id].append(i)
+                raw_invert_index[word_hash][doc_id][0] = len(tokens_list)
+                raw_invert_index[word_hash][doc_id][1].append(i)
 
             sys.stdout.write(f"\rОбработано в сырой обратный индекс: {step} / {len(direct_index)}")
             sys.stdout.flush()
@@ -313,49 +407,77 @@ def create_raw_invert_index(direct_index):
 
     print(f"\nСырой обратный индекс создан. {datetime.datetime.now() - t}.\nНачинаем обработку индекса")
 
-    invert_index = dict()
-
-    # offset в файле считаем как количество записаных чисел, а не байт, так как при считывании нужно передавать
-    # количество чисел(функция read_form_binary_doc_id)
-
+    # Этот каст делается для того, что бы raw_invert_index стал обычным словарем
+    raw_invert_index = dict(raw_invert_index)
+    len_raw_invert_index = len(raw_invert_index)
     step = 0
     t = datetime.datetime.now()
 
     offset_in_bin_file = 0
+
+    total_files_in_corp = len(direct_index)
+
     for key_dict, value_dict in raw_invert_index.items():
+
+        IDF = math.log10(total_files_in_corp / len(value_dict))
+
         offset_for_word = offset_in_bin_file
 
+        # Преобразование doc_id
         sorted_doc_ids, vbcode_doc_ids = get_vb_code_for_doc_ids(value_dict.keys())
         # длина кода vb
         len_of_vbcode_doc_ids = len(vbcode_doc_ids)
 
-        freqs = list()
+        # Преобразование [pos_in_file, ...], подсчет частот(freq), а так же подсчет метрики TFIDF
+        freqs = []
+        tfidf = []
         for_write_pos_in_file = b''
         for elem in sorted_doc_ids:
-            pos_in_file = value_dict[elem]
-            freqs.append(len(pos_in_file))
+            total_tokens_in_file, pos_in_file = value_dict[elem]
+
+            current_freq = len(pos_in_file)
+            freqs.append(current_freq)
+
+            TF = current_freq / total_tokens_in_file
+            TFIDF = TF * IDF
+            tfidf.append(TFIDF)
+
             for_write_pos_in_file += vbcode.encode(sorted(pos_in_file))
         # длина позиций в документе в vb
         len_of_vbcode_for_pos_in_files = len(for_write_pos_in_file)
 
-        # форматируем частоты в файле
+        # Форматируем частоты в файле
         frm = str(len(freqs)) + FORMAT_TO_UI
         write_freq = struct.pack(frm, *freqs)
 
-        res = vbcode_doc_ids + write_freq + for_write_pos_in_file
+        # Формируем TFIDF в файле
+        frm = str(len(tfidf)) + FORMAT_TO_FL
+        write_tfidf = struct.pack(frm, *tfidf)
+
+        res = vbcode_doc_ids + write_tfidf + write_freq + for_write_pos_in_file
         total_len = len(res)
         with open('bin_file', 'ab') as f:
             f.write(res)
 
-        invert_index[key_dict] = (offset_for_word, len_of_vbcode_doc_ids, len_of_vbcode_for_pos_in_files)
+        raw_invert_index[key_dict] = (offset_for_word, len_of_vbcode_doc_ids, len_of_vbcode_for_pos_in_files)
         offset_in_bin_file += total_len
 
-        sys.stdout.write(f"\rСоздание обратного индекс: {step} / {len(raw_invert_index)}")
+        sys.stdout.write(f"\rСоздание обратного индекс: {step} / {len_raw_invert_index}")
         sys.stdout.flush()
         step += 1
 
     print(f"\nОбратный индекс создан. {datetime.datetime.now() - t}")
-    return invert_index
+    return raw_invert_index
+
+
+def make_articles_rang(res_dict):
+    """
+    получаем результат, теперь его нужно отсортировать по сумме значений, а не по ключу!
+    :param res_dict: {}
+    :return:
+    """
+    return sorted(
+        res_dict.items(), key=lambda kv: kv[1][0] if isinstance(kv[1], (list, tuple)) else kv[1], reverse=True)
 
 
 @timer
@@ -377,7 +499,9 @@ def get_search_res(request: str):
             request = request.replace(words_or_quote, get_search_res_for_words(words_or_quote))
 
     res_ids = eval(request)
-    get_articles(set_of_ids=res_ids)
+    sorted_by_metric = make_articles_rang(res_ids)
+
+    get_articles(set_of_ids=sorted_by_metric)
 
 
 def get_search_res_for_words(request: str) -> str:
@@ -394,9 +518,7 @@ def get_search_res_for_words(request: str) -> str:
 
         dict_for_cur_word = read_bin_struct_for_bool(pos_in_file=pos_in_file, offset_for_doc=offset_for_doc)
 
-        ids_for_word = set(dict_for_cur_word)
-
-        request = replace_word_to_set(request, word, str(ids_for_word))
+        request = replace_word_to_set(request, word, str(dict_for_cur_word))
 
     return request
 
@@ -469,11 +591,21 @@ def load_invert_index(file_name='INDEX'):
     return invert_index
 
 
+def get_snippet(filename):
+    with open(f'../data_url/{filename}.txt', 'r') as f:
+        f.seek(0)
+        return f.readline()
+
+
 def get_articles(set_of_ids):
-    for doc_id in set_of_ids:
+    for item in set_of_ids:
+        doc_id = item[0]
         offset = DIRECT_INDEX[doc_id]
         title = read_direct_index(offset)
-        print(f"Id: {doc_id}. Заголовок: {title}. Url: {URL_PREFFIX}{title}")
+        TFIDF = item[1][0] if isinstance(item[1], (list, tuple)) else item[1]
+        print(f"Id: {doc_id}. Заголовок: {title}. Url: {URL_PREFFIX}{title}. TFIDF: {TFIDF}")
+        snippet = get_snippet(title)
+        print(snippet)
     print('Articles count: %s' % len(set_of_ids))
 
 
@@ -489,7 +621,7 @@ if __name__ == '__main__':
     DIRECT_INDEX = load_direct_index()
     INDEX = load_invert_index()
 
-    # request = 'мастер'
+    # request = '«мастер»/1'
     # request = 'мастер спорта'
     # request = 'мастер спорта по самбо'
     # get_search_res_for_quotes(request)
@@ -500,9 +632,6 @@ if __name__ == '__main__':
     # get_search_res_for_quote(request=request, step=3)
     #
     # while True:
-    #     """request = input("Запрос: ")
-    #     if request == "exit":
-    #         break"""
     #     # request = "«другой мир»/10 | (двигатель & сгорания) | «гоночные автомобили»/5"
     #
     request = "((мастер) & «по самбо»/1)"
@@ -511,4 +640,3 @@ if __name__ == '__main__':
     #
     get_search_res(request)
     #     break
-
