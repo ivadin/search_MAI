@@ -12,8 +12,8 @@ PUNCTUATION = string.punctuation + '—«»'
 WORD = re.compile(r'\w+')
 
 
-def get_articles_name():
-    mypath = '../data_url/'
+def get_articles_name(dir_name='../data_url/'):
+    mypath = dir_name
     f = []
     for (dirpath, dirnames, filenames) in walk(mypath):
         f.extend(filenames)
@@ -52,14 +52,14 @@ def tokenize_me_2(file_text):
 
 
 if __name__ == "__main__":
-    articles = get_articles_name()
+    articles = get_articles_name("../../data_raw/")
 
     t = datetime.now()
     for article in articles:
-        with open('../data_url/' + article, 'r') as source:
+        with open('../../data_raw/' + article, 'r') as source:
             text = source.read()
             tokens = tokenize_me_1(text)
-            with open("../data_url_tokens/" + article, 'w') as fp:
+            with open("../../data_raw_tokens/" + article, 'w') as fp:
                 json.dump(tokens, fp, sort_keys=False,
                           ensure_ascii=False, indent=4, separators=(',', ': '))
     print(datetime.now() - t)

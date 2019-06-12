@@ -28,7 +28,7 @@ def timer(func):
 
 
 def get_articles_name(dn):
-    mypath = '../' + dn + '/'
+    mypath = f'../{dn}/'
     f = []
     for (dirpath, dirnames, filenames) in walk(mypath):
         f.extend(filenames)
@@ -127,6 +127,7 @@ def create_doc_id_files(file_name='doc_id'):
 
 
 def hash_str(s):
+
     return int(hashlib.sha1(s.encode('utf-8')).hexdigest(), 16) % (10 ** 8)
 
 

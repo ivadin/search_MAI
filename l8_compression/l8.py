@@ -77,7 +77,7 @@ def create_raw_invert_index(doc_id):
     return invert_index
 
 
-def create_temp_dict(res_dict, current_dict, step=3):
+def create_temp_dict(res_dict, current_dict, step=1):
     """
     Получить dict {doc_id: [pos_in_doc1, pos_in_doc2, pos_in_doc3, ...]}
     :param res_dict: словарь, полученный на предыдущих этапах обработки цитаты
@@ -183,7 +183,7 @@ if __name__ == '__main__':
     """
     INDEX = load_obj('INDEX')
     # request = 'мастер'
-    # request = 'мастер спорта'
+    request = 'мастер спорта'
     # request = 'мастер по самбо'
-    request = 'лёгкой спорта тренер'
+    # request = 'лёгкой спорта тренер'
     get_search_res_for_quotes(request=request)

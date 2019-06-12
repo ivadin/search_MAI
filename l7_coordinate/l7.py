@@ -2,6 +2,7 @@ import sys
 import struct
 import json
 import re
+import datetime
 from collections import defaultdict
 sys.path.append('..')
 
@@ -107,6 +108,7 @@ def get_search_res_for_quotes(request):
     words = get_words_for_quotes(request)
     res_dict = dict()
     is_first = True
+    t = datetime.datetime.now()
     for word in words:
         hash_word = hash_str(word)
         pos_in_file, offset = INDEX[hash_word]
@@ -130,8 +132,8 @@ def get_search_res_for_quotes(request):
             is_first = False
         else:
             res_dict = create_temp_dict(res_dict, dict_for_cur_word)
-
-    get_articles(set(res_dict))
+    print(f"Поиск выполнен за {datetime.datetime.now() - t}")
+    get_articles(set(list(set(res_dict))[:5]))
 
 
 if __name__ == '__main__':
@@ -150,7 +152,8 @@ if __name__ == '__main__':
     #     # request = input("Запрос: ")
     # request = 'мастер'
     # request = 'мастер спорта'
-    request = 'мастер по самбо'
+    # request = 'мастер по самбо'
+    request = "боевые искусства"
     # request = 'лёгкой спорта тренер'
     #     if request == "exit()":
     #         break

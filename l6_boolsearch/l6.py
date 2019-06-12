@@ -1,5 +1,6 @@
 import sys
 import re
+import datetime
 sys.path.append('..')
 
 from l5_index.l5 import load_obj, hash_str, read_form_binary_doc_id, get_articles, timer  # noqa
@@ -30,6 +31,7 @@ def get_words(input_string):
 
 @timer
 def get_search_res(request):
+    t = datetime.datetime.now()
     words = get_words(request)
     for word in words:
         hash_word = hash_str(word)
@@ -39,19 +41,24 @@ def get_search_res(request):
         request = replace_word_to_set(request, word, str(ids_for_word))
 
     res_ids = eval(request)
+    print(f"Результат получен за {datetime.datetime.now() - t}")
 
-    get_articles(set_of_ids=res_ids, file_name='../l5_index/doc_id')
+    get_articles(set_of_ids=list(res_ids)[:5], file_name='../l5_index/doc_id')
 
 
 if __name__ == '__main__':
     INV_INDEX = load_obj('../l5_index/INVERT_INDEX')
-    while True:
-        request = input("Запрос: ")
-        # request = "(заслуженный ^ мастер) ^ спорта"
-        if request == "exit()":
-            break
-
-        request = parse_request(request.lower())
-        get_search_res(request=request)
-        print("\n")
+    
+    # while True:
+    #     request = input("Запрос: ")
+    # request = "заслуженный мастер спорта"
+    request = "боевые искусства"
+    # request = "оно | в | на | он | я"
+    #     # if request == "exit()":
+    #     #     break
+    #
+    print(f"Запрос: {request}")
+    request = parse_request(request.lower())
+    get_search_res(request=request)
+    print("\n")
 

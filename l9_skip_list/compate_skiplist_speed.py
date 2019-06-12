@@ -121,21 +121,21 @@ def get_ans_with_skip_list(first_list, second_list):
 
 
 if __name__ == '__main__':
-    list_count = 2
+    list_count = 4
     res_for_search = [sorted(set(gen_list(MAX_VALUE))) for _ in range(list_count)]
-
-    t1 = datetime.now()
-    print(len(reduce(lambda a, x: work(a, x), res_for_search)))
-    print(f"Work compare: {datetime.now() - t1}")
 
     t1 = datetime.now()
     print(len(reduce(lambda a, x: get_simple_compare(a, x), res_for_search)))
     print(f"Simple compare: {datetime.now() - t1}")
 
     t1 = datetime.now()
-    print(len(reduce(lambda a, x: get_set_compare(a, x), res_for_search)))
-    print(f"Python sets compare: {datetime.now() - t1}")
+    print(len(reduce(lambda a, x: work(a, x), res_for_search)))
+    print(f"Optimized simple compare: {datetime.now() - t1}")
 
     t1 = datetime.now()
     print(len(reduce(lambda a, x: get_ans_with_skip_list(a, x), res_for_search)))
     print(f"Skip list compare: {datetime.now() - t1}")
+
+    t1 = datetime.now()
+    print(len(reduce(lambda a, x: get_set_compare(a, x), res_for_search)))
+    print(f"Python sets compare: {datetime.now() - t1}")

@@ -151,7 +151,7 @@ def get_articles_with_metric(sorted_by_metric, file_name='doc_id'):
     """
     for doc_id, tfidf in sorted_by_metric:
         title, url = read_index_title_and_url(doc_id, file_name)
-        print(f"Id: {doc_id}. Заголовок: {title}. Url: {url}. TfIdf: {tfidf[0]}")
+        print(f"Id: {doc_id}. Заголовок: {title}. Url: {url}. TfIdf: {sum(tfidf)}")
     print(f'Articles count: {len(sorted_by_metric)}')
 
 
@@ -199,7 +199,7 @@ def get_search_res_for_quotes(request):
 
     sorted_by_metric = make_articles_rang(res_dict)
 
-    get_articles_with_metric(sorted_by_metric)
+    get_articles_with_metric(sorted_by_metric[:5])
 
 
 if __name__ == '__main__':
@@ -210,5 +210,6 @@ if __name__ == '__main__':
     # request = 'мастер'
     # request = 'мастер спорта'
     # request = 'мастер по самбо'
-    request = 'лёгкой спорта тренер'
+    # request = 'лёгкой спорта тренер'
+    request = 'боевые искусства'
     get_search_res_for_quotes(request=request)
