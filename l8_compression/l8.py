@@ -1,6 +1,7 @@
 import sys
 import struct
 import json
+import datetime
 from collections import defaultdict
 import vbcode  # noqa
 
@@ -132,8 +133,7 @@ def read_bin_struct(pos_in_file, offset_for_doc, offset_for_freq, file_name='bin
         freqs = struct.unpack(frm, bin_freqs)
         vb_list_of_positions = f.read(offset_for_freq)
         list_of_positions = vbcode.decode(vb_list_of_positions)
-    # import pdbq
-    # pdb.set_trace()
+
     first_slice = 0
     for i in range(len(doc_ids)):
         second_slice = first_slice + freqs[i]
@@ -149,10 +149,14 @@ def get_search_res_for_quotes(request):
     words = get_words_for_quotes(request)
     res_dict = dict()
     is_first = True
+    t = datetime.datetime.now()
     for word in words:
         hash_word = hash_str(word)
-        pos_in_file, offset_for_doc, offset_for_freq = INDEX[hash_word]
-
+        try:
+            pos_in_file, offset_for_doc, offset_for_freq = INDEX[hash_word]
+        except:
+            print(f"Нет слова. Запрос: {request}")
+            return
         dict_for_cur_word = read_bin_struct(pos_in_file, offset_for_doc, offset_for_freq)
 
         if is_first:
@@ -160,7 +164,9 @@ def get_search_res_for_quotes(request):
             is_first = False
         else:
             res_dict = create_temp_dict(res_dict, dict_for_cur_word)
-    get_articles(set(res_dict))
+
+    print(f"Поиск выполнен за {datetime.datetime.now() - t}")
+    get_articles(set(list(set(res_dict))[:5]))
 
 
 def write_data():
@@ -183,7 +189,46 @@ if __name__ == '__main__':
     """
     INDEX = load_obj('INDEX')
     # request = 'мастер'
-    request = 'мастер спорта'
+    # request = 'мастер спорта'
     # request = 'мастер по самбо'
     # request = 'лёгкой спорта тренер'
-    get_search_res_for_quotes(request=request)
+    # get_search_res_for_quotes(request=request)
+    q = [
+        "спорт экспресс",
+        "виды спорта",
+        "активный отдых",
+        "хоккеная площадка",
+        "трансфер кхл",
+        "фигурное катание",
+        "профессиональный бокс",
+        "боевые искусства",
+        "кхл",
+        "спортивный клуб",
+        "нхл",
+        "физическая культура и спорт",
+        "лучшие футболисты мира",
+        "зимний спорт",
+        "зимняя олимпиада",
+        "кровавый спорт",
+        "газета спорт",
+        "министерство спорта",
+        "зимние виды спорта",
+        "федерация спорта",
+        "мастер спорта",
+        "олимпийский спорт",
+        "команды кхл",
+        "конькобежный спорт",
+        "чемпионат мира по самбо",
+        "лыжный спорт",
+        "гиревой спорт",
+        "водные виды спорта",
+        "самбо",
+        "летняя универсиада"
+    ]
+
+    for qs in q:
+        request = qs
+        print(f"Запрос: {request}")
+
+        get_search_res_for_quotes(request=request)
+        print("\n")

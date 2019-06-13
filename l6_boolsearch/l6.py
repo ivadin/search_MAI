@@ -31,11 +31,16 @@ def get_words(input_string):
 
 @timer
 def get_search_res(request):
+    request = parse_request(request.lower())
     t = datetime.datetime.now()
     words = get_words(request)
     for word in words:
         hash_word = hash_str(word)
-        pos_in_file, offset = INV_INDEX[hash_word]
+        try:
+            pos_in_file, offset = INV_INDEX[hash_word]
+        except:
+            print(f"Нет слова. Запрос: {request}")
+            return
         ids_for_word = set(read_form_binary_doc_id(
             offset=offset, file_name='../l5_index/cord_blocks', pos_in_file=pos_in_file))
         request = replace_word_to_set(request, word, str(ids_for_word))
@@ -48,17 +53,52 @@ def get_search_res(request):
 
 if __name__ == '__main__':
     INV_INDEX = load_obj('../l5_index/INVERT_INDEX')
-    
+
+    q = [
+        "спорт экспресс",
+        "виды спорта",
+        "активный отдых",
+        "хоккеная площадка",
+        "трансфер кхл",
+        "фигурное катание",
+        "профессиональный бокс",
+        "боевые искусства",
+        "кхл",
+        "спортивный клуб",
+        "нхл",
+        "физическая культура и спорт",
+        "лучшие футболисты мира",
+        "зимний спорт",
+        "зимняя олимпиада",
+        "кровавый спорт",
+        "газета спорт",
+        "министерство спорта",
+        "зимние виды спорта",
+        "федерация спорта",
+        "мастер спорта",
+        "олимпийский спорт",
+        "команды кхл",
+        "конькобежный спорт",
+        "чемпионат мира по самбо",
+        "лыжный спорт",
+        "гиревой спорт",
+        "водные виды спорта",
+        "самбо",
+        "летняя универсиада"
+    ]
+
     # while True:
     #     request = input("Запрос: ")
     # request = "заслуженный мастер спорта"
-    request = "боевые искусства"
+    # request = "боевые искусства"
     # request = "оно | в | на | он | я"
     #     # if request == "exit()":
     #     #     break
     #
-    print(f"Запрос: {request}")
-    request = parse_request(request.lower())
-    get_search_res(request=request)
-    print("\n")
+    for qs in q:
+        request = qs
+        print(f"Запрос: {request}")
+
+        get_search_res(request=request)
+        print("\n")
 

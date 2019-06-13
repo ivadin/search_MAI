@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
 
-import wikipediaapi
+import wikipedia
 from googlesearch import search as google_search
 from urllib.parse import unquote
 import numpy as np
@@ -11,10 +11,13 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-wikipediaapi.set_lang('ru')
-queries = "q.json"
-wikipedia_mark_data_file = "wikipedia_mark_data.json"
-google_mark_data_file = "google_mark_data.json"
+wikipedia.set_lang('ru')
+queries = "q_kp.json"
+# wikipedia_mark_data_file = "wikipedia_mark_data.json"
+# google_mark_data_file = "google_mark_data.json"
+
+wikipedia_mark_data_file = "wikipedia_mark_data_kp.json"
+google_mark_data_file = "google_mark_data_kp.json"
 
 wikipedia_mark_data_list = []
 google_mark_data = []
@@ -62,7 +65,7 @@ def get_articles_from_google(query):
 
 def get_articles_from_wiki(query):
     article = []
-    for w in wikipediaapi.search(query=query, results=limit):
+    for w in wikipedia.search(query=query, results=limit):
         article.append(w)
     logger.info("For query: %s Articles: %s" % (query, article))
     return article

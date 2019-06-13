@@ -75,7 +75,7 @@ def read_elements_from_bin_file(offset, file_name, pos_in_file):
         return struct.unpack(frm, values)
 
 
-def create_temp_dict(res_dict, current_dict, step=3):
+def create_temp_dict(res_dict, current_dict, step=2):
     """
     Получить dict {doc_id: [pos_in_doc1, pos_in_doc2, pos_in_doc3, ...]}
     :param res_dict: словарь, полученный на предыдущих этапах обработки цитаты
@@ -111,7 +111,11 @@ def get_search_res_for_quotes(request):
     t = datetime.datetime.now()
     for word in words:
         hash_word = hash_str(word)
-        pos_in_file, offset = INDEX[hash_word]
+        try:
+            pos_in_file, offset = INDEX[hash_word]
+        except:
+            print(f"Нет слова. Запрос: {request}")
+            return
         # аргументы умножаются на 3, так как в булевом поиске мы записывали по одному числу,
         # а теперь мы хотим считать offset елементов, какждый из которых состоит из 3-x чисел формата long long
         res_of_read = read_form_binary_doc_id(
@@ -153,10 +157,57 @@ if __name__ == '__main__':
     # request = 'мастер'
     # request = 'мастер спорта'
     # request = 'мастер по самбо'
-    request = "боевые искусства"
+    # request = "боевые искусства"
     # request = 'лёгкой спорта тренер'
     #     if request == "exit()":
     #         break
 
-    get_search_res_for_quotes(request=request)
-    print("\n")
+    # get_search_res_for_quotes(request=request)
+    # print("\n")
+    q = [
+        "спорт экспресс",
+        "виды спорта",
+        "активный отдых",
+        "хоккеная площадка",
+        "трансфер кхл",
+        "фигурное катание",
+        "профессиональный бокс",
+        "боевые искусства",
+        "кхл",
+        "спортивный клуб",
+        "нхл",
+        "физическая культура и спорт",
+        "лучшие футболисты мира",
+        "зимний спорт",
+        "зимняя олимпиада",
+        "кровавый спорт",
+        "газета спорт",
+        "министерство спорта",
+        "зимние виды спорта",
+        "федерация спорта",
+        "мастер спорта",
+        "олимпийский спорт",
+        "команды кхл",
+        "конькобежный спорт",
+        "чемпионат мира по самбо",
+        "лыжный спорт",
+        "гиревой спорт",
+        "водные виды спорта",
+        "самбо",
+        "летняя универсиада"
+    ]
+
+    # while True:
+    #     request = input("Запрос: ")
+    # request = "заслуженный мастер спорта"
+    # request = "боевые искусства"
+    # request = "оно | в | на | он | я"
+    #     # if request == "exit()":
+    #     #     break
+    #
+    for qs in q:
+        request = qs
+        print(f"Запрос: {request}")
+
+        get_search_res_for_quotes(request=request)
+        print("\n")

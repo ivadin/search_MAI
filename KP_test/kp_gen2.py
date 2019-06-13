@@ -35,8 +35,11 @@ SIZE_OF_UI = 4
 FORMAT_TO_FL = 'f'
 SIZE_OF_FL = 4
 
-DIR_WITH_ARTICLES = 'data_url'
-DIR_WITH_TOKENS = 'data_url_tokens'
+# DIR_WITH_ARTICLES = 'data_url'
+# DIR_WITH_TOKENS = 'data_url_tokens'
+
+DIR_WITH_ARTICLES = '../Статьи_КП'
+DIR_WITH_TOKENS = '../Статьи_КП_tokens'
 
 TOTAL_ARTICLE_COUNT: int = 0
 
@@ -210,10 +213,14 @@ def get_search_res_for_quotes(request, step):
     words = get_words_for_quotes(request)
     res_dict = LogicDict()
     is_first = True
+    t = datetime.datetime.now()
     for word in words:
         hash_word = hash_str(word)
-        pos_in_file, offset_for_doc, offset_for_freq = INDEX[hash_word]
-
+        try:
+            pos_in_file, offset_for_doc, offset_for_freq = INDEX[hash_word]
+        except:
+            print(f"Нет слова. Запрос: {request}")
+            return
         dict_for_cur_word = read_bin_struct_for_quotes(pos_in_file, offset_for_doc, offset_for_freq)
 
         if is_first:
@@ -229,6 +236,7 @@ def get_search_res_for_quotes(request, step):
         ...
     }
     """
+    print(f"Поиск выполнен за {datetime.datetime.now() - t}")
     return str(res_dict)
 
 
@@ -380,10 +388,10 @@ def create_raw_invert_index(direct_index):
     raw_invert_index:
     {
         word: 
-        {
-            doc_id: (кол-во токенов в докумене, [позиции, на которых слово встретиловсь])
-            # частотсу слова в документе, для расчета idf можно получить как len([позиции])
-        }
+            {
+                doc_id: (кол-во токенов в докумене, [позиции, на которых слово встретиловсь])
+                # частотсу слова в документе, для расчета idf можно получить как len([позиции])
+            }
     }
     """
     dir_name = DIR_WITH_TOKENS
@@ -493,6 +501,8 @@ def get_search_res(request: str):
             else:
                 step = len(WORD.findall(words_or_quote))
             search_res = get_search_res_for_quotes(words_or_quote, step)
+            if not search_res:
+                return
             request = request.replace(words_or_quote, search_res)
             i += 1
         else:
@@ -501,7 +511,7 @@ def get_search_res(request: str):
     res_ids = eval(request)
     sorted_by_metric = make_articles_rang(res_ids)
 
-    get_articles(set_of_ids=sorted_by_metric)
+    get_articles(set_of_ids=sorted_by_metric[:10])
 
 
 def get_search_res_for_words(request: str) -> str:
@@ -592,7 +602,7 @@ def load_invert_index(file_name='INDEX'):
 
 
 def get_snippet(filename):
-    with open(f'../data_url/{filename}.txt', 'r') as f:
+    with open(f'../../Статьи_КП/{filename}.txt', 'r') as f:
         f.seek(0)
         return f.readline()
 
@@ -634,9 +644,54 @@ if __name__ == '__main__':
     # while True:
     #     # request = "«другой мир»/10 | (двигатель & сгорания) | «гоночные автомобили»/5"
     #
-    request = "((мастер) & «по самбо»/1)"
+    # request = "((мастер) & «по самбо»/1)"
     # request = "«мастер спорта федерации»/3 | «по самбо»/6"
         # request = "«мастер по самбо»/3"
     #
-    get_search_res(request)
+    # get_search_res(request)
     #     break
+
+    # q = [
+    #     "«спорт экспресс»/2",
+    #     "«виды спорта»/2",
+    #     "«активный отдых»/2",
+    #     "«хоккеная площадка»/2",
+    #     "«трансфер кхл»/2",
+    #     "«фигурное катание»/2",
+    #     "«профессиональный бокс»/2",
+    #     "«боевые искусства»/2",
+    #     "«кхл»/2",
+    #     "«спортивный клуб»/2",
+    #     "«нхл»/2",
+    #     "«физическая культура и спорт»/2",
+    #     "«лучшие футболисты мира»/2",
+    #     "«зимний спорт»/2",
+    #     "«зимняя олимпиада»/2",
+    #     "«кровавый спорт»/2",
+    #     "«газета спорт»/2",
+    #     "«министерство спорта»/2",
+    #     "«зимние виды спорта»/2",
+    #     "«федерация спорта»/2",
+    #     "«мастер спорта»/2",
+    #     "«олимпийский спорт»/2",
+    #     "«команды кхл»/2",
+    #     "«конькобежный спорт»/2",
+    #     "«чемпионат мира по самбо»/2",
+    #     "«лыжный спорт»/2",
+    #     "«гиревой спорт»/2",
+    #     "«водные виды спорта»/2",
+    #     "«самбо»/2",
+    #     "«летняя универсиада»/2"
+    # ]
+
+    q = [
+        "«Вулканы России»/2",
+        "«гражданское общество»/2"
+         ]
+
+    for qs in q:
+        request = qs
+        print(f"Запрос: {request}")
+
+        get_search_res(request=request)
+        print("\n")
